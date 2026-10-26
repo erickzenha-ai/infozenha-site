@@ -69,8 +69,9 @@ Qualquer alteração enviada para a branch `main` vai ao ar em cerca de 1 minuto
 ## O que falta trocar (marcado no site)
 
 - **Fotos:** o topo e a seção "Por que" já usam fotos reais (`assets/img/fotos`, originais em `E:\InfoZenha\05 Fotos Infozenha`). Ideal no futuro: uma foto de bancada com **notebook** (a atual mostra peças de celular) e fotos reais dos seminovos no lugar das imagens de fabricante dos anúncios.
-- **Depoimentos:** os 3 cards "Espaço para avaliação do Google" devem ser trocados por avaliações reais do Google (não inventar). No `index.html`, procure por `depoimento`.
-- **Instagram:** no rodapé está "em breve". Trocar pelo link do perfil quando confirmado (e adicionar em `sameAs` nos dados estruturados).
+- **Depoimentos:** a seção "Quem já confiou" está **escondida** (atributo `hidden` em `<section id="depoimentos">`) até existirem avaliações reais no Google. Para ativar: troque o texto dos 3 cards pelas avaliações reais (não inventar) e apague o `hidden`.
+- **Instagram:** não aparece no rodapé enquanto o perfil não estiver confirmado. Há um comentário no `index.html` com o trecho pronto para colar (e vale adicionar em `sameAs` nos dados estruturados).
+- **Especificações a confirmar:** no card do Lenovo IdeaPad e do Dell Inspiron 3520 o texto do site traz só o que é seguro (o anúncio original cita "Ryzen 3 7200U", "vídeo dedicado" e "Core i3 10ª geração, tela 14\"", que não batem com esses modelos). Confirmar na etiqueta do aparelho e ajustar.
 - **Horário de atendimento:** a confirmar; quando definir, dá para incluir no rodapé e nos dados estruturados (`openingHours`).
 
 ## Ligar o domínio infozenhanotebooks.com.br

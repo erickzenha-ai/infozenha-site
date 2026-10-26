@@ -6,25 +6,25 @@
       "configuracao": "Intel Core i7 10ª geração · 16 GB DDR4 · SSD NVMe 256 GB · NVIDIA MX250 2 GB · tela 15,6\" Full HD · teclado iluminado · leitor de digital",
       "preco": 2800,
       "condicao": "Até 4x sem juros no cartão",
-      "garantia": "",
+      "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-dell-inspiron-5590.webp",
       "disponivel": true
     },
     {
       "modelo": "Dell Inspiron 3520",
-      "configuracao": "Intel Core i3 10ª geração · 8 GB DDR4 · SSD NVMe 128 GB · tela 14\" Full HD · leitor de digital",
+      "configuracao": "Intel Core i3 · 8 GB DDR4 · SSD NVMe 128 GB · tela Full HD · leitor de digital",
       "preco": 1900,
       "condicao": "Até 4x sem juros no cartão",
-      "garantia": "",
+      "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-dell-inspiron-3520.webp",
       "disponivel": true
     },
     {
-      "modelo": "Lenovo IdeaPad Ryzen 3",
-      "configuracao": "AMD Ryzen 3 7200U · vídeo Radeon · 8 GB DDR5 · SSD NVMe 240 GB · Windows original",
+      "modelo": "Lenovo IdeaPad",
+      "configuracao": "AMD Ryzen 3 · vídeo Radeon integrado · 8 GB DDR5 · SSD NVMe 240 GB · Windows original",
       "preco": 2700,
       "condicao": "Até 4x sem juros no cartão",
-      "garantia": "",
+      "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-lenovo-ideapad.webp",
       "disponivel": true
     },
@@ -33,7 +33,7 @@
       "configuracao": "Intel Core i3 11ª geração · 8 GB DDR4 · SSD NVMe 240 GB · Windows original",
       "preco": 1750,
       "condicao": "Até 4x sem juros no cartão",
-      "garantia": "",
+      "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-samsung-galaxy-book.webp",
       "disponivel": true
     }
