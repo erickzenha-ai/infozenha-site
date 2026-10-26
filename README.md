@@ -45,6 +45,7 @@ Os cards da seção "Seminovos revisados, com garantia" vêm do arquivo `seminov
 | `modelo` | Marca e modelo. Vai na mensagem do botão "Tenho interesse" |
 | `configuracao` | Processador, memória, SSD, tela |
 | `preco` | Número sem "R$" e sem ponto de milhar (ex.: `2490` ou `2490.50`). Use `null` para mostrar "Consulte" |
+| `condicao` | Condição de pagamento (ex.: `"Até 4x sem juros no cartão"`). Pode deixar `""` |
 | `garantia` | Texto livre (ex.: `"90 dias"`). Pode deixar `""` |
 | `foto` | Caminho da foto em WebP. Vazio (`""`) mostra o bloco [FOTO] |
 | `disponivel` | `false` esconde o card sem apagar (útil quando vender) |
@@ -52,7 +53,9 @@ Os cards da seção "Seminovos revisados, com garantia" vêm do arquivo `seminov
 
 Para mostrar só a mensagem "Novos seminovos toda semana…", deixe a lista vazia: `"seminovos": []`.
 
-**Fotos:** tire em boa luz e fundo limpo, converta para **WebP** em https://squoosh.app (largura de cerca de 800 px, qualidade 75), salve em `assets/img/seminovos/` e coloque o caminho no campo `foto`.
+**Fotos:** tire em boa luz e fundo limpo, converta para **WebP** em https://squoosh.app (largura de cerca de 800 px, qualidade 75), salve em `assets/img/fotos/` e coloque o caminho no campo `foto`. A imagem aparece num quadro quadrado de fundo escuro, sem cortes (anúncios quadrados ficam perfeitos).
+
+**Quando vender:** troque `"disponivel": true` por `false` (o card some na hora). Quando não houver nenhum disponível, o site mostra sozinho a mensagem "Novos seminovos toda semana…".
 
 **Futuro:** o plano é gerar este `seminovos.json` direto do estoque do sistema de gestão, sem cadastro duplicado.
 
@@ -65,7 +68,7 @@ Qualquer alteração enviada para a branch `main` vai ao ar em cerca de 1 minuto
 
 ## O que falta trocar (marcado no site)
 
-- **Fotos [FOTO]:** bancada (no topo, aparece no computador) e fotos dos seminovos. Usar fotos reais, sem banco de imagens.
+- **Fotos:** o topo e a seção "Por que" já usam fotos reais (`assets/img/fotos`, originais em `E:\InfoZenha\05 Fotos Infozenha`). Ideal no futuro: uma foto de bancada com **notebook** (a atual mostra peças de celular) e fotos reais dos seminovos no lugar das imagens de fabricante dos anúncios.
 - **Depoimentos:** os 3 cards "Espaço para avaliação do Google" devem ser trocados por avaliações reais do Google (não inventar). No `index.html`, procure por `depoimento`.
 - **Instagram:** no rodapé está "em breve". Trocar pelo link do perfil quando confirmado (e adicionar em `sameAs` nos dados estruturados).
 - **Horário de atendimento:** a confirmar; quando definir, dá para incluir no rodapé e nos dados estruturados (`openingHours`).

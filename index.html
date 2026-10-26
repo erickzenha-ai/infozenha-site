@@ -89,7 +89,9 @@ section{padding:72px 0}
 .selos{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;padding:0;list-style:none}
 .selos li{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#E6E7EA}
 .selos svg{width:20px;height:20px;color:var(--laranja)}
-.topo .foto{display:none;aspect-ratio:4/5;background:repeating-linear-gradient(45deg,#2C3036 0 12px,#30343a 12px 24px);border-color:#4A4F57;color:#8F949B}
+.topo-foto{margin:0;position:relative}
+.topo-foto img{width:100%;height:auto;aspect-ratio:8/7;object-fit:cover;border-radius:18px;box-shadow:0 24px 60px #0007;outline:1px solid #ffffff14}
+.topo-foto figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:#22252Ae6;color:#F4F4F5;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px;border-left:4px solid var(--laranja);backdrop-filter:blur(4px)}
 
 /* 2. Serviços */
 .servicos{background:var(--areia)}
@@ -111,7 +113,9 @@ section{padding:72px 0}
 .seminovos{background:var(--areia)}
 .grade-seminovos{display:grid;gap:18px;margin-top:36px}
 .seminovo{background:var(--branco);border-radius:16px;overflow:hidden;border:1px solid var(--linha);display:flex;flex-direction:column}
-.seminovo .foto,.seminovo img{aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:0;border:0;border-bottom:1px solid var(--linha)}
+.seminovo .foto{aspect-ratio:1/1;width:100%;border-radius:0;border:0;border-bottom:1px solid var(--linha)}
+.seminovo img{aspect-ratio:1/1;width:100%;height:auto;object-fit:contain;background:#0E0F11}
+.seminovo .condicao{font-size:14px;color:var(--texto-suave);margin-top:-4px}
 .seminovo-corpo{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
 .seminovo .config{color:var(--texto-suave);font-size:15px}
 .seminovo .preco{font-weight:900;font-size:28px;margin-top:4px}
@@ -124,7 +128,9 @@ section{padding:72px 0}
 /* 5. Por que */
 .sec-escura{background:var(--grafite);color:#F4F4F5}
 .sec-escura .titulo-secao{color:#F4F4F5}
-.motivos{display:grid;gap:14px;margin-top:36px}
+.porque-grid{display:grid;gap:16px;margin-top:36px}
+.porque-foto img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
+.motivos{display:grid;gap:14px}
 .motivo{background:var(--grafite-2);border-radius:16px;padding:24px;border:1px solid #3A3F46}
 .motivo svg{width:30px;height:30px;color:var(--laranja);margin-bottom:14px}
 .motivo h3{color:#F4F4F5}
@@ -172,9 +178,12 @@ section{padding:72px 0}
 @media (min-width:1000px){
   .topo{padding-bottom:96px}
   .topo-grid{grid-template-columns:1.25fr .75fr}
-  .topo .foto{display:grid}
-  .cards-servicos,.motivos{grid-template-columns:repeat(4,1fr)}
-  .grade-seminovos,.depoimentos-grade{grid-template-columns:repeat(3,1fr)}
+  .cards-servicos{grid-template-columns:repeat(4,1fr)}
+  .porque-grid{grid-template-columns:.8fr 1.2fr;align-items:stretch}
+  .porque-foto img{aspect-ratio:auto;height:100%}
+  .motivos{grid-template-columns:repeat(2,1fr)}
+  .grade-seminovos{grid-template-columns:repeat(4,1fr)}
+  .depoimentos-grade{grid-template-columns:repeat(3,1fr)}
   .wa-flutuante{right:28px;bottom:28px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-flutuante{transition:none}}
@@ -206,8 +215,10 @@ section{padding:72px 0}
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Busca e entrega</li>
         </ul>
       </div>
-      <!-- [FOTO] Trocar por uma foto real da bancada (WebP, cerca de 900x1125 px) -->
-      <div class="foto" role="img" aria-label="Espaço para foto da bancada">[FOTO]<br>bancada InfoZenha</div>
+      <figure class="topo-foto">
+        <img src="assets/img/fotos/erick-notebook-1100.webp" srcset="assets/img/fotos/erick-notebook-640.webp 640w, assets/img/fotos/erick-notebook-1100.webp 1100w" sizes="(min-width:1000px) 420px, calc(100vw - 40px)" width="1100" height="963" fetchpriority="high" decoding="async" alt="Erick Zenha, técnico da InfoZenha, na bancada segurando um notebook aberto para manutenção">
+        <figcaption>Você fala direto com o técnico que cuida do seu notebook.</figcaption>
+      </figure>
     </div>
   </div>
 </header>
@@ -273,11 +284,17 @@ section{padding:72px 0}
   <div class="wrap">
     <span class="rotulo">Por que a InfoZenha</span>
     <h2 class="titulo-secao">Por que nossos clientes voltam</h2>
+    <div class="porque-grid">
+    <picture class="porque-foto">
+      <source media="(min-width:1000px)" srcset="assets/img/fotos/bancada-retrato-720.webp" width="720" height="900">
+      <img src="assets/img/fotos/bancada-paisagem-800.webp" width="800" height="600" loading="lazy" decoding="async" alt="Técnico da InfoZenha concentrado em um reparo na bancada">
+    </picture>
     <div class="motivos">
       <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg><h3>Mais de 20 anos de experiência</h3><p>Atendendo Goiânia desde 2001.</p></div>
       <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><h3>Atendimento direto com o técnico</h3><p>Você fala com quem vai cuidar do seu equipamento.</p></div>
       <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg><h3>Garantia em tudo</h3><p>Serviços e seminovos com garantia e ordem de serviço.</p></div>
       <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg><h3>Agilidade</h3><p>Resposta rápida e prazo combinado antes de começar.</p></div>
+    </div>
     </div>
   </div>
 </section>
@@ -352,7 +369,7 @@ section{padding:72px 0}
       return '<article class="seminovo">'+foto+'<div class="seminovo-corpo">'+(s.exemplo?'<span class="etiqueta-exemplo">EXEMPLO</span>':'')+
         '<h3>'+esc(s.modelo)+'</h3><p class="config">'+esc(s.configuracao)+'</p>'+
         (s.garantia?'<span class="garantia">Garantia de '+esc(s.garantia)+'</span>':'')+
-        '<p class="preco">'+esc(preco(s.preco))+'</p>'+
+        '<p class="preco">'+esc(preco(s.preco))+'</p>'+(s.condicao?'<p class="condicao">'+esc(s.condicao)+'</p>':'')+
         '<a class="btn" href="https://wa.me/'+WA+'?text='+msg+'" target="_blank" rel="noopener">Tenho interesse</a></div></article>';
     }).join('');
   }

@@ -2,13 +2,40 @@
   "atualizado_em": "2026-10-26",
   "seminovos": [
     {
-      "modelo": "Dell Latitude 5490",
-      "configuracao": "Intel Core i5 8ª geração · 16 GB de memória · SSD 256 GB · tela 14\"",
-      "preco": null,
-      "garantia": "90 dias",
-      "foto": "",
-      "disponivel": true,
-      "exemplo": true
+      "modelo": "Dell Inspiron 5590",
+      "configuracao": "Intel Core i7 10ª geração · 16 GB DDR4 · SSD NVMe 256 GB · NVIDIA MX250 2 GB · tela 15,6\" Full HD · teclado iluminado · leitor de digital",
+      "preco": 2800,
+      "condicao": "Até 4x sem juros no cartão",
+      "garantia": "",
+      "foto": "assets/img/fotos/seminovo-dell-inspiron-5590.webp",
+      "disponivel": true
+    },
+    {
+      "modelo": "Dell Inspiron 3520",
+      "configuracao": "Intel Core i3 10ª geração · 8 GB DDR4 · SSD NVMe 128 GB · tela 14\" Full HD · leitor de digital",
+      "preco": 1900,
+      "condicao": "Até 4x sem juros no cartão",
+      "garantia": "",
+      "foto": "assets/img/fotos/seminovo-dell-inspiron-3520.webp",
+      "disponivel": true
+    },
+    {
+      "modelo": "Lenovo IdeaPad Ryzen 3",
+      "configuracao": "AMD Ryzen 3 7200U · vídeo Radeon · 8 GB DDR5 · SSD NVMe 240 GB · Windows original",
+      "preco": 2700,
+      "condicao": "Até 4x sem juros no cartão",
+      "garantia": "",
+      "foto": "assets/img/fotos/seminovo-lenovo-ideapad.webp",
+      "disponivel": true
+    },
+    {
+      "modelo": "Samsung Galaxy Book",
+      "configuracao": "Intel Core i3 11ª geração · 8 GB DDR4 · SSD NVMe 240 GB · Windows original",
+      "preco": 1750,
+      "condicao": "Até 4x sem juros no cartão",
+      "garantia": "",
+      "foto": "assets/img/fotos/seminovo-samsung-galaxy-book.webp",
+      "disponivel": true
     }
   ]
 }
