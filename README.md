@@ -2,8 +2,8 @@
 
 Site institucional de uma página da InfoZenha: assistência técnica de notebooks em Goiânia desde 2001. O objetivo é levar o visitante para uma conversa no WhatsApp.
 
-- **No ar:** https://erickzenha-ai.github.io/infozenha-site/
-- **Domínio definitivo:** infozenhanotebooks.com.br (a registrar; veja "Ligar o domínio" abaixo)
+- **No ar:** https://infozenhanotebooks.com.br/ (o endereço antigo github.io redireciona para ele)
+- **Domínio:** registrado no Registro.br em 26/10/2026, DNS apontado para o GitHub Pages (4 registros A + CNAME www + TXT SPF)
 - **Briefing:** `E:\InfoZenha\04 Site\BRIEFING-SITE.md`
 - **Contexto da empresa:** `E:\InfoZenha\CLAUDE.md`
 
@@ -18,7 +18,7 @@ Site estático (HTML, CSS e um pouco de JavaScript), sem framework, hospedado de
 | `assets/` | Favicon, ícones e imagem de compartilhamento (`img/og-image.png`) |
 | `robots.txt` e `sitemap.xml` | Para o Google encontrar o site |
 | `404.html` | Página de "não encontrado" |
-| `dominio/CNAME` | Arquivo pronto para o domínio infozenhanotebooks.com.br (ainda **fora** da raiz de propósito) |
+| `CNAME` | Diz ao GitHub Pages que o site responde em infozenhanotebooks.com.br. Não apague |
 
 ## Atualizar os seminovos
 
@@ -70,7 +70,6 @@ Qualquer alteração enviada para a branch `main` vai ao ar em cerca de 1 minuto
 
 - **Fotos:** o topo e a seção "Por que" já usam fotos reais (`assets/img/fotos`, originais em `E:\InfoZenha\05 Fotos Infozenha`). Ideal no futuro: uma foto de bancada com **notebook** (a atual mostra peças de celular) e fotos reais dos seminovos no lugar das imagens de fabricante dos anúncios.
 - **Depoimentos:** a seção "Quem já confiou" está **escondida** (atributo `hidden` em `<section id="depoimentos">`) até existirem avaliações reais no Google. Para ativar: troque o texto dos 3 cards pelas avaliações reais (não inventar) e apague o `hidden`.
-- **Instagram:** não aparece no rodapé enquanto o perfil não estiver confirmado. Há um comentário no `index.html` com o trecho pronto para colar (e vale adicionar em `sameAs` nos dados estruturados).
 - **Especificações a confirmar:** no card do Lenovo IdeaPad e do Dell Inspiron 3520 o texto do site traz só o que é seguro (o anúncio original cita "Ryzen 3 7200U", "vídeo dedicado" e "Core i3 10ª geração, tela 14\"", que não batem com esses modelos). Confirmar na etiqueta do aparelho e ajustar.
 - **Horário de atendimento:** a confirmar; quando definir, dá para incluir no rodapé e nos dados estruturados (`openingHours`).
 
