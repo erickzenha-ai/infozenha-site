@@ -3,7 +3,7 @@
   "seminovos": [
     {
       "modelo": "Dell Inspiron 5590",
-      "configuracao": "Intel Core i7 10ª geração · 16 GB DDR4 · SSD NVMe 256 GB · NVIDIA MX250 2 GB · tela 15,6\" Full HD · teclado iluminado · leitor de digital",
+      "configuracao": "Intel Core i7 10ª geração (i7-10510U) · 16 GB DDR4 · SSD NVMe 256 GB · NVIDIA MX250 2 GB · tela 15,6\" Full HD · teclado iluminado · leitor de digital",
       "preco": 2800,
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
@@ -11,17 +11,8 @@
       "disponivel": true
     },
     {
-      "modelo": "Dell Inspiron 3520",
-      "configuracao": "Intel Core i3 · 8 GB DDR4 · SSD NVMe 128 GB · tela Full HD · leitor de digital",
-      "preco": 1900,
-      "condicao": "Até 4x sem juros no cartão",
-      "garantia": "90 dias",
-      "foto": "assets/img/fotos/seminovo-dell-inspiron-3520.webp",
-      "disponivel": true
-    },
-    {
-      "modelo": "Lenovo IdeaPad",
-      "configuracao": "AMD Ryzen 3 · vídeo Radeon integrado · 8 GB DDR5 · SSD NVMe 240 GB · Windows original",
+      "modelo": "Lenovo IdeaPad 1",
+      "configuracao": "AMD Ryzen 3 7320U · vídeo Radeon 610M integrado · 8 GB DDR5 · SSD NVMe 256 GB · tela 15,6\" · Windows original",
       "preco": 2700,
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
@@ -29,8 +20,17 @@
       "disponivel": true
     },
     {
+      "modelo": "Dell Vostro 3401",
+      "configuracao": "Intel Core i3 10ª geração (i3-1005G1) · 8 GB DDR4 · SSD NVMe 128 GB · tela 14\" Full HD",
+      "preco": 1900,
+      "condicao": "Até 4x sem juros no cartão",
+      "garantia": "90 dias",
+      "foto": "assets/img/fotos/seminovo-dell-vostro-3401.webp",
+      "disponivel": true
+    },
+    {
       "modelo": "Samsung Galaxy Book",
-      "configuracao": "Intel Core i3 11ª geração · 8 GB DDR4 · SSD NVMe 240 GB · Windows original",
+      "configuracao": "Intel Core i3 11ª geração (i3-1115G4) · 8 GB DDR4 · SSD NVMe 256 GB · tela 15,6\" · Windows original",
       "preco": 1750,
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
