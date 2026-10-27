@@ -47,7 +47,8 @@ Os cards da seção "Seminovos revisados, com garantia" vêm do arquivo `seminov
 | `preco` | Número sem "R$" e sem ponto de milhar (ex.: `2490` ou `2490.50`). Use `null` para mostrar "Consulte" |
 | `condicao` | Condição de pagamento (ex.: `"Até 4x sem juros no cartão"`). Pode deixar `""` |
 | `garantia` | Texto livre (ex.: `"90 dias"`). Pode deixar `""` |
-| `foto` | Caminho da foto em WebP. Vazio (`""`) mostra o bloco [FOTO] |
+| `foto` | Caminho da foto em WebP (capa do card). Vazio (`""`) mostra o bloco [FOTO] |
+| `fotos` | Lista da galeria: `[{ "src": "assets/img/seminovos/modelo/01.webp", "legenda": "Tampa" }, …]`. O cliente toca na capa e vê todas em tela cheia (deslizar, setas, zoom). Opcional: sem ela, a galeria mostra só a capa |
 | `disponivel` | `false` esconde o card sem apagar (útil quando vender) |
 | `exemplo` | Só no card de exemplo: mostra a etiqueta "EXEMPLO". **Apague o card de exemplo quando cadastrar o primeiro seminovo real** |
 

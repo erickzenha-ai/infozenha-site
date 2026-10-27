@@ -8,7 +8,25 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-dell-inspiron-5590.webp",
-      "disponivel": true
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/dell-inspiron-5590/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-5590/02.webp",
+          "legenda": "Tampa"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-5590/03.webp",
+          "legenda": "Lateral com as portas"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-5590/04.webp",
+          "legenda": "Configuração real (tela Sobre)"
+        }
+      ]
     },
     {
       "modelo": "Lenovo IdeaPad 1",
@@ -17,7 +35,25 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-lenovo-ideapad.webp",
-      "disponivel": true
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/lenovo-ideapad/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/lenovo-ideapad/02.webp",
+          "legenda": "Teclado e selos"
+        },
+        {
+          "src": "assets/img/seminovos/lenovo-ideapad/03.webp",
+          "legenda": "Tampa"
+        },
+        {
+          "src": "assets/img/seminovos/lenovo-ideapad/04.webp",
+          "legenda": "Configuração real (tela Sobre)"
+        }
+      ]
     },
     {
       "modelo": "Dell Vostro 3401",
@@ -26,7 +62,29 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-dell-vostro-3401.webp",
-      "disponivel": true
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/dell-vostro-3401/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/dell-vostro-3401/02.webp",
+          "legenda": "Teclado"
+        },
+        {
+          "src": "assets/img/seminovos/dell-vostro-3401/03.webp",
+          "legenda": "Tampa"
+        },
+        {
+          "src": "assets/img/seminovos/dell-vostro-3401/04.webp",
+          "legenda": "Lateral com as portas"
+        },
+        {
+          "src": "assets/img/seminovos/dell-vostro-3401/05.webp",
+          "legenda": "Configuração real (tela Sobre)"
+        }
+      ]
     },
     {
       "modelo": "Samsung Galaxy Book",
@@ -35,7 +93,29 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-samsung-galaxy-book.webp",
-      "disponivel": true
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/samsung-galaxy-book/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-galaxy-book/02.webp",
+          "legenda": "Teclado"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-galaxy-book/03.webp",
+          "legenda": "Tampa"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-galaxy-book/04.webp",
+          "legenda": "Lateral com as portas"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-galaxy-book/05.webp",
+          "legenda": "Configuração real (tela Sobre)"
+        }
+      ]
     }
   ]
 }
