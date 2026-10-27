@@ -61,7 +61,13 @@ section{position:relative}
 .anatomia{height:320vh}
 .anatomia .fixo{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1fr;align-content:center;gap:10px;overflow:hidden}
 .anatomia .cab{padding-top:70px}
-.palco{height:min(52vh,460px);display:grid;place-items:center;perspective:1400px}
+.palco{height:min(46vh,440px);display:grid;place-items:center}
+.moldura{position:relative;height:100%;aspect-ratio:9/10;border-radius:22px;overflow:hidden;border:1px solid var(--linha);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(242,92,31,.15)}
+.moldura img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity .7s ease,transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.moldura img.ativa{opacity:1;transform:scale(1)}
+.moldura::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(18,19,22,.65));pointer-events:none}
+.etiqueta-real{position:absolute;left:14px;bottom:14px;z-index:1;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:rgba(18,19,22,.8);padding:6px 12px;border-radius:999px}
+.etiqueta-real::before{content:"● ";color:var(--laranja)}
 .pilha{position:relative;width:min(66vw,340px);aspect-ratio:1.55;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-36deg)}
 .camada{position:absolute;inset:0;border-radius:14px;transform:translateZ(calc(var(--i) * var(--gap,4px)));transition:box-shadow .3s,outline-color .3s;outline:2px solid transparent;outline-offset:3px}
 .camada.ativa{outline-color:var(--laranja);box-shadow:0 0 60px rgba(242,92,31,.55)}
@@ -139,7 +145,7 @@ footer b{color:var(--texto)}
 @media (min-width:760px){
   .anatomia .fixo{grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
   .anatomia .cab{grid-column:1/-1;padding-top:0}
-  .palco{height:min(64vh,560px)}.pilha{width:min(40vw,460px)}
+  .palco{height:min(68vh,600px)}
   .dupla{grid-template-columns:1fr 1fr}
   .grade{grid-template-columns:repeat(2,1fr)}.passos{grid-template-columns:repeat(3,1fr)}
 }
@@ -179,14 +185,13 @@ footer b{color:var(--texto)}
 <section class="anatomia" id="anatomia">
   <div class="fixo"><div class="wrap" style="display:contents">
     <div class="cab wrap"><span class="eyebrow">Anatomia do conserto</span><h2 class="titulo">Cada camada, <span class="fino">um cuidado.</span></h2></div>
-    <div class="palco" aria-hidden="true"><div class="pilha" id="pilha">
-      <div class="camada c-base" style="--i:0"></div>
-      <div class="camada c-placa" style="--i:1"></div>
-      <div class="camada c-cooler" style="--i:2"></div>
-      <div class="camada c-memoria" style="--i:2"></div>
-      <div class="camada c-ssd" style="--i:2"></div>
-      <div class="camada c-teclado" style="--i:3"></div>
-      <div class="camada c-tela" style="--i:4"></div>
+    <div class="palco"><div class="moldura" id="moldura">
+      <img src="img/anat-1.webp" alt="Dobradiça solta na carcaça do notebook" class="ativa">
+      <img src="img/anat-2.webp" alt="Fixação quebrada na carcaça" loading="lazy">
+      <img src="img/anat-3.webp" alt="SSD e memória instalados" loading="lazy">
+      <img src="img/anat-4.webp" alt="Poeira sendo retirada do cooler com pinça" loading="lazy">
+      <img src="img/anat-5.webp" alt="Câmera térmica medindo a temperatura da placa" loading="lazy">
+      <span class="etiqueta-real">Foto real da bancada</span>
     </div></div>
     <div class="wrap" style="width:auto;margin:0;padding:0 20px">
       <div class="progresso"><i id="progresso"></i></div>
@@ -258,18 +263,15 @@ footer b{color:var(--texto)}
   // Topo fica sólido ao rolar; foto do herói com leve paralaxe
   var topo=document.getElementById('topo'),foto=document.getElementById('foto-heroi');
   // Anatomia: o notebook se abre em camadas conforme a rolagem
-  var sec=document.getElementById('anatomia'),pilha=document.getElementById('pilha'),itens=[].slice.call(document.querySelectorAll('#partes li')),barra=document.getElementById('progresso');
+  var sec=document.getElementById('anatomia'),fotos=[].slice.call(document.querySelectorAll('#moldura img')),itens=[].slice.call(document.querySelectorAll('#partes li')),barra=document.getElementById('progresso');
   function quadro(){
     var y=scrollY;topo.classList.toggle('solido',y>40);
     if(!reduz&&foto)foto.style.transform='translate3d(0,'+(y*.18)+'px,0) scale(1.06)';
     var r=sec.getBoundingClientRect(),total=sec.offsetHeight-innerHeight,p=Math.min(1,Math.max(0,-r.top/total));
-    pilha.style.setProperty('--gap',(4+Math.min(1,p*1.6)*(innerWidth<760?34:62))+'px');
-    pilha.style.transform='rotateX('+(58-p*8)+'deg) rotateZ('+(-36+p*14)+'deg)';
     barra.style.width=(p*100)+'%';
     var ativo=Math.min(itens.length-1,Math.floor(p*itens.length*1.02));
     itens.forEach(function(li,i){li.classList.toggle('ativa',i===ativo)});
-    var alvo=(itens[ativo].dataset.c||'').split(',');
-    pilha.querySelectorAll('.camada').forEach(function(c){c.classList.toggle('ativa',alvo.some(function(a){return c.classList.contains(a)}))});
+    fotos.forEach(function(f,i){f.classList.toggle('ativa',i===ativo)});
   }
   addEventListener('scroll',function(){requestAnimationFrame(quadro)},{passive:true});addEventListener('resize',quadro);quadro();
 
