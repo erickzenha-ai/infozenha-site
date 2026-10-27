@@ -40,7 +40,8 @@ img{max-width:100%;display:block}a{color:inherit}
 .heroi h1 b{color:var(--laranja);font-weight:900}
 .heroi p.sub{max-width:520px;color:var(--suave);font-size:clamp(17px,2vw,20px);margin:22px 0 30px}
 .acoes{display:flex;flex-wrap:wrap;gap:12px}
-.numeros{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;background:var(--linha);border:1px solid var(--linha);border-radius:18px;overflow:hidden;max-width:760px}
+.numeros{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:56px;background:var(--linha);border:1px solid var(--linha);border-radius:18px;overflow:hidden;max-width:900px}
+@media (min-width:760px){.numeros{grid-template-columns:repeat(4,1fr)}}
 .numeros div{background:rgba(18,19,22,.7);backdrop-filter:blur(8px);padding:18px 18px 16px}
 .numeros strong{display:block;font-size:clamp(26px,4vw,40px);font-weight:900;line-height:1;letter-spacing:-.02em}
 .numeros strong span{color:var(--laranja)}.numeros strong.txt{font-size:clamp(17px,2.6vw,26px);line-height:1.15}
@@ -167,6 +168,7 @@ footer b{color:var(--texto)}
     </div>
     <div class="numeros">
       <div><strong data-conta="25">0</strong><small>anos consertando notebooks</small></div>
+      <div><strong><span>+</span><b data-conta="3800" style="font-weight:900">0</b></strong><small>clientes atendidos</small></div>
       <div><strong><span data-conta="90">0</span></strong><small>dias de garantia</small></div>
       <div><strong class="txt">Busca <span>+</span> entrega</strong><small>em Goiânia e região</small></div>
     </div>
@@ -276,7 +278,7 @@ footer b{color:var(--texto)}
   var io={observe:function(){revelar()}};
   function revelar(){document.querySelectorAll('.aparece:not(.visivel)').forEach(function(el){if(el.getBoundingClientRect().top<innerHeight*.92)el.classList.add('visivel')})}
   addEventListener('scroll',revelar,{passive:true});addEventListener('resize',revelar);revelar();setTimeout(revelar,300);
-  document.querySelectorAll('[data-conta]').forEach(function(el){var alvo=+el.dataset.conta,t0=null;function passo(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1400);el.textContent=Math.round(alvo*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(passo)}reduz?el.textContent=alvo:requestAnimationFrame(passo)});
+  document.querySelectorAll('[data-conta]').forEach(function(el){var alvo=+el.dataset.conta,t0=null;function passo(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1400);el.textContent=Math.round(alvo*(1-Math.pow(1-k,3))).toLocaleString('pt-BR');if(k<1)requestAnimationFrame(passo)}reduz?el.textContent=alvo.toLocaleString('pt-BR'):requestAnimationFrame(passo)});
 
   // Antes e depois arrastável
   var cmp=document.getElementById('comparar');
