@@ -2,12 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>InfoZenha | Assistência técnica de notebooks em Goiânia</title>
 <meta name="description" content="Assistência técnica de notebooks em Goiânia desde 2001. Upgrade de SSD e memória, reparo de carcaça e limpeza completa, com garantia e busca e entrega. Seminovos revisados.">
-<meta name="theme-color" content="#22252A">
 <link rel="canonical" href="https://infozenhanotebooks.com.br/">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <!-- Compartilhamento (WhatsApp, Instagram, Facebook) -->
 <meta property="og:type" content="website">
@@ -20,9 +18,6 @@
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="InfoZenha · Notebooks e Tecnologia · Goiânia, desde 2001">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&display=swap">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,382 +46,303 @@
   ]
 }
 </script>
+<meta name="theme-color" content="#121316">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--laranja:#F25C1F;--laranja-texto:#C2410C;--grafite:#22252A;--grafite-2:#2C3036;--areia:#F4F2EF;--branco:#FFFFFF;--texto-suave:#4A4F57;--linha:#E4E1DC;--wa:#25D366}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;font:400 17px/1.6 Archivo,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--grafite);background:var(--branco)}
-img,svg{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.02em}
-h1,h2{font-weight:900}
-h3{font-weight:800;font-size:20px}
-p{margin:0}
-.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.rotulo{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--laranja-texto);margin-bottom:12px}
-.sec-escura .rotulo,.topo .rotulo{color:var(--laranja)}
-.titulo-secao{font-size:clamp(30px,7vw,44px);margin-bottom:14px}
-.intro{color:var(--texto-suave);max-width:640px;font-size:18px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:12px;background:var(--laranja);color:#fff;font:800 18px/1 Archivo,system-ui,sans-serif;text-decoration:none;box-shadow:0 8px 24px #F25C1F40;transition:transform .15s,background .15s}
-.btn:hover{background:#DB4E14;transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #F25C1F;outline-offset:3px}
-.btn svg{width:22px;height:22px;flex-shrink:0}
-.btn-escuro{background:var(--grafite);box-shadow:0 8px 24px #22252A40}
-.btn-escuro:hover{background:#121418}
-.foto{display:grid;place-items:center;background:repeating-linear-gradient(45deg,#E9E6E1 0 12px,#EFEDE9 12px 24px);border:2px dashed #C9C4BC;border-radius:16px;color:#8A847B;font-weight:800;letter-spacing:.12em;font-size:14px;text-align:center;padding:12px}
+:root{--laranja:#F25C1F;--laranja-claro:#FF8A4C;--fundo:#121316;--fundo-2:#1A1C20;--grafite:#22252A;--linha:rgba(255,255,255,.09);--texto:#F4F4F5;--suave:#A9ADB4;--wa:#25D366}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+.eyebrow{font-weight:800;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--laranja)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font-weight:800;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.btn-wa{background:var(--laranja);color:#16181B;box-shadow:0 10px 40px rgba(242,92,31,.35)}.btn-wa:hover{transform:translateY(-2px);box-shadow:0 16px 50px rgba(242,92,31,.5)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--texto);border:1px solid var(--linha)}.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.seta{width:30px;height:30px;border-radius:50%;background:#16181B;color:var(--laranja);display:grid;place-items:center;font-size:15px}
 
-/* 1. Topo */
-.topo{background:var(--grafite);color:#F4F4F5;padding:22px 0 64px;position:relative;overflow:hidden}
-.topo:after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;border:2px solid #F25C1F33;pointer-events:none}
-.barra{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px}
-.barra .logo{width:min(230px,62vw);height:auto}
-.barra-wa{display:none;color:#F4F4F5;text-decoration:none;font-weight:800;font-size:15px;border:1.5px solid #ffffff33;border-radius:10px;padding:10px 16px}
-.barra-wa:hover{border-color:var(--laranja);color:#fff}
-.topo-grid{display:grid;gap:40px;align-items:center}
-.topo h1{font-size:clamp(40px,10.5vw,68px);color:#F4F4F5;max-width:12ch}
-.topo h1 span{color:var(--laranja)}
-.topo .sub{margin:20px 0 30px;font-size:clamp(18px,4.6vw,21px);color:#C9CCD1;max-width:560px}
-.selos{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;padding:0;list-style:none}
-.selos li{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#E6E7EA}
-.selos svg{width:20px;height:20px;color:var(--laranja)}
-.topo-foto{margin:0;position:relative}
-.topo-foto img{width:100%;height:auto;aspect-ratio:8/7;object-fit:cover;border-radius:18px;box-shadow:0 24px 60px #0007;outline:1px solid #ffffff14}
-.topo-foto figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:#22252Ae6;color:#F4F4F5;font-size:14px;font-weight:700;padding:10px 14px;border-radius:10px;border-left:4px solid var(--laranja);backdrop-filter:blur(4px)}
+/* Topo */
+.topo{position:fixed;inset:0 0 auto;z-index:20;padding:14px 0;transition:background .3s,backdrop-filter .3s}
+.topo.solido{background:rgba(18,19,22,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--linha)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.marca{font-weight:900;font-size:20px;letter-spacing:.08em;text-decoration:none}.marca span{color:var(--laranja)}
+.topo .btn{min-height:44px;padding:0 18px;font-size:14px}
 
-/* 2. Serviços */
-.servicos{background:var(--areia)}
-.cards-servicos{display:grid;gap:16px;margin-top:36px}
-.servico{background:var(--branco);border-radius:16px;padding:26px 24px;border:1px solid var(--linha)}
-.servico .icone{width:52px;height:52px;border-radius:14px;background:#FDEBE3;color:var(--laranja-texto);display:grid;place-items:center;margin-bottom:16px}
-.servico .icone svg{width:28px;height:28px}
-.servico p{color:var(--texto-suave);margin-top:8px}
-.outro{margin-top:26px;font-weight:700;font-size:18px}
-.outro a{color:var(--laranja-texto);text-decoration-thickness:2px;text-underline-offset:4px}
+/* Herói */
+.heroi{position:relative;min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr);align-items:end;padding:120px 0 60px;overflow:hidden;isolation:isolate}
+.nevoa{position:absolute;inset:-20%;z-index:-2;background:radial-gradient(40% 35% at 70% 30%,rgba(242,92,31,.28),transparent 70%),radial-gradient(35% 30% at 20% 70%,rgba(80,110,160,.22),transparent 70%),radial-gradient(50% 40% at 50% 100%,rgba(242,92,31,.12),transparent 70%);animation:nevoa 18s ease-in-out infinite alternate;filter:blur(10px)}
+@keyframes nevoa{to{transform:translate3d(-4%,3%,0) scale(1.08)}}
+.grao{position:absolute;inset:0;z-index:-1;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.heroi-foto{position:absolute;right:-6%;top:0;bottom:0;width:62%;z-index:-1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%),linear-gradient(transparent 0%,#000 25%,#000 70%,transparent);mask-image:linear-gradient(90deg,transparent,#000 35%);opacity:.9}
+.heroi-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:saturate(.9) contrast(1.05);will-change:transform}
+.heroi h1{font-weight:900;font-size:clamp(48px,9.6vw,128px);line-height:.92;letter-spacing:-.045em;margin:18px 0 0;max-width:12ch}
+.heroi h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--texto)}
+.heroi h1 b{color:var(--laranja);font-weight:900}
+.heroi p.sub{max-width:520px;color:var(--suave);font-size:clamp(17px,2vw,20px);margin:22px 0 30px}
+.acoes{display:flex;flex-wrap:wrap;gap:12px}
+.numeros{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:56px;background:var(--linha);border:1px solid var(--linha);border-radius:18px;overflow:hidden;max-width:900px}
+@media (min-width:760px){.numeros{grid-template-columns:repeat(4,1fr)}}
+.numeros div{background:rgba(18,19,22,.7);backdrop-filter:blur(8px);padding:18px 18px 16px}
+.numeros strong{display:block;font-size:clamp(26px,4vw,40px);font-weight:900;line-height:1;letter-spacing:-.02em}
+.numeros strong span{color:var(--laranja)}.numeros strong.txt{font-size:clamp(17px,2.6vw,26px);line-height:1.15}
+.numeros small{color:var(--suave);font-size:13px}
+.rolar{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-size:12px;letter-spacing:.2em;color:var(--suave);text-transform:uppercase}
 
-/* 3. Como funciona */
-.passos{display:grid;gap:14px;margin:36px 0 0;padding:0;list-style:none;counter-reset:passo}
-.passo{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;padding:22px 0;border-top:1px solid var(--linha)}
-.passo:before{counter-increment:passo;content:counter(passo);font-weight:900;font-size:44px;line-height:.9;color:var(--laranja);min-width:42px}
-.passo p{color:var(--texto-suave);margin-top:6px}
+/* Seções */
+section{position:relative}
+.secao{padding:clamp(80px,12vw,150px) 0}
+.titulo{font-weight:900;font-size:clamp(36px,6vw,76px);line-height:.98;letter-spacing:-.035em;margin:14px 0 0}
+.titulo .fino{font-weight:400}
+.lead{color:var(--suave);font-size:18px;max-width:560px;margin-top:18px}
+.aparece{opacity:0;transform:translateY(40px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.aparece.visivel{opacity:1;transform:none}
 
-/* 4. Seminovos */
-.seminovos{background:var(--areia)}
-.grade-seminovos{display:grid;gap:18px;margin-top:36px}
-.seminovo{background:var(--branco);border-radius:16px;overflow:hidden;border:1px solid var(--linha);display:flex;flex-direction:column}
-.seminovo .foto{aspect-ratio:1/1;width:100%;border-radius:0;border:0;border-bottom:1px solid var(--linha)}
-.seminovo img{aspect-ratio:1/1;width:100%;height:auto;object-fit:contain;background:#0E0F11}
-.seminovo .condicao{font-size:14px;color:var(--texto-suave);margin-top:-4px}
-.seminovo-corpo{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
-.seminovo .config{color:var(--texto-suave);font-size:15px}
-.seminovo .preco{font-weight:900;font-size:28px;margin-top:4px}
-.seminovo .garantia{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--laranja-texto)}
-.seminovo .btn{margin-top:auto;min-height:50px;font-size:16px;width:100%}
-/* Galeria de fotos dos seminovos */
-.abrir-galeria{position:relative;display:block;width:100%;padding:0;border:0;background:#0E0F11;cursor:zoom-in}
-.abrir-galeria img{display:block}
-.qtd-fotos{position:absolute;right:12px;bottom:12px;background:rgba(34,37,42,.88);color:#fff;font-weight:800;font-size:13px;padding:7px 12px;border-radius:999px;display:flex;align-items:center;gap:6px}
-.abrir-galeria:focus-visible{outline:3px solid var(--laranja);outline-offset:-3px}
-.galeria{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:#0E0F11;color:#fff}
-.galeria::backdrop{background:#0E0F11}
-.galeria-topo{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:linear-gradient(rgba(14,15,17,.9),rgba(14,15,17,0))}
-.galeria-titulo{font-weight:800;font-size:16px}.galeria-titulo small{display:block;font-weight:600;color:#C9CCD1;font-size:13px;margin-top:2px}
-.galeria-fechar{width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:24px;cursor:pointer;flex:none}
-.galeria-trilho{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior:contain}
-.galeria-trilho::-webkit-scrollbar{display:none}
-.galeria-slide{flex:0 0 100%;height:100%;scroll-snap-align:center;overflow:auto;display:grid;place-items:center;padding:72px 0 64px}
-.galeria-slide img{max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in;touch-action:pinch-zoom pan-x pan-y}
-.galeria-slide.zoom{place-items:start;padding:72px 0 64px}
-.galeria-slide.zoom img{max-width:none;max-height:none;width:220%;cursor:zoom-out}
-.galeria-seta{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:52px;height:52px;border-radius:50%;border:0;background:rgba(255,255,255,.16);color:#fff;font-size:28px;cursor:pointer;display:none}
-.galeria-seta.ant{left:16px}.galeria-seta.prox{right:16px}
-.galeria-rodape{position:absolute;left:0;right:0;bottom:0;z-index:2;text-align:center;padding:14px 16px 18px;background:linear-gradient(rgba(14,15,17,0),rgba(14,15,17,.9));font-size:14px;color:#E4E6E9}
-.galeria-rodape b{color:var(--laranja)}
-@media (hover:hover) and (min-width:760px){.galeria-seta{display:block}}
-.etiqueta-exemplo{align-self:flex-start;background:var(--grafite);color:#fff;font-size:11px;font-weight:800;letter-spacing:.14em;padding:5px 9px;border-radius:6px}
-.vazio{margin-top:28px;background:var(--branco);border:2px dashed #D6D1C9;border-radius:16px;padding:26px;font-weight:700;font-size:18px}
-.vazio a{color:var(--laranja-texto)}
+/* Anatomia: notebook que se desmonta com a rolagem */
+.anatomia{height:320vh}
+.anatomia .fixo{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1fr;align-content:center;gap:10px;overflow:hidden}
+.anatomia .cab{padding-top:70px}
+.palco{height:min(46vh,440px);display:grid;place-items:center}
+.moldura{position:relative;height:100%;aspect-ratio:9/10;border-radius:22px;overflow:hidden;border:1px solid var(--linha);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(242,92,31,.15)}
+.moldura img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity .7s ease,transform 2.4s cubic-bezier(.2,.7,.2,1)}
+.moldura img.ativa{opacity:1;transform:scale(1)}
+.moldura::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(18,19,22,.65));pointer-events:none}
+.etiqueta-real{position:absolute;left:14px;bottom:14px;z-index:1;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:rgba(18,19,22,.8);padding:6px 12px;border-radius:999px}
+.etiqueta-real::before{content:"● ";color:var(--laranja)}
+.pilha{position:relative;width:min(66vw,340px);aspect-ratio:1.55;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-36deg)}
+.camada{position:absolute;inset:0;border-radius:14px;transform:translateZ(calc(var(--i) * var(--gap,4px)));transition:box-shadow .3s,outline-color .3s;outline:2px solid transparent;outline-offset:3px}
+.camada.ativa{outline-color:var(--laranja);box-shadow:0 0 60px rgba(242,92,31,.55)}
+.c-base{background:linear-gradient(135deg,#2C3036,#1B1D21);border:1px solid #3A3F46}
+.c-placa{inset:6% 5%;background:radial-gradient(circle at 75% 30%,#1D2B22 0 12%,transparent 13%),repeating-linear-gradient(90deg,transparent 0 22px,rgba(120,200,140,.12) 22px 23px),repeating-linear-gradient(0deg,transparent 0 18px,rgba(120,200,140,.1) 18px 19px),#123321;border:1px solid #2E6B45}
+.c-placa::after{content:"";position:absolute;left:30%;top:30%;width:22%;height:34%;background:#0B0C0E;border:2px solid #555;border-radius:4px}
+.c-cooler{inset:14% 12% 14% 52%;background:radial-gradient(circle,#0B0C0E 0 18%,transparent 19%),repeating-conic-gradient(from 0deg,#5A5F66 0 12deg,#2A2D32 12deg 24deg);border-radius:50%;border:3px solid #6B7078}
+.c-memoria{inset:58% 54% 12% 8%;background:repeating-linear-gradient(90deg,#1E4A2C 0 10px,#C8A64A 10px 12px);border:1px solid #3d8a55;border-radius:4px}
+.c-ssd{inset:16% 56% 56% 10%;background:linear-gradient(90deg,#0F1012,#23262B);border:1px solid #F25C1F;border-radius:4px}
+.c-ssd::after{content:"SSD";position:absolute;inset:0;display:grid;place-items:center;font:800 11px Archivo;color:var(--laranja);letter-spacing:.1em}
+.c-teclado{background:repeating-linear-gradient(90deg,transparent 0 6%,rgba(0,0,0,.35) 6% 7%),repeating-linear-gradient(0deg,#3A3E45 0 15%,#2A2D32 15% 17%),#3A3E45;border:1px solid #4A4F57;clip-path:inset(4% 4% 30% 4% round 10px)}
+.c-tela{background:linear-gradient(140deg,#0E1116,#1C2330 60%,#F25C1F 160%);border:6px solid #0B0C0E;box-shadow:0 0 50px rgba(242,92,31,.25)}
+.c-tela::after{content:"INFOZENHA";position:absolute;inset:0;display:grid;place-items:center;font:900 18px Archivo;letter-spacing:.2em;color:rgba(255,255,255,.75)}
+.partes{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.partes li{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;padding:12px 14px;border-radius:14px;border:1px solid var(--linha);background:rgba(255,255,255,.02);opacity:.35;transition:opacity .4s,background .4s,border-color .4s}
+.partes li.ativa{opacity:1;background:rgba(242,92,31,.08);border-color:rgba(242,92,31,.4)}
+.partes b{display:block;font-size:17px}.partes small{color:var(--suave);font-size:14px;line-height:1.45}
+.partes .n{font-weight:900;color:var(--laranja);font-size:22px;line-height:1}
+.progresso{height:3px;background:var(--linha);border-radius:3px;overflow:hidden}.progresso i{display:block;height:100%;width:0;background:var(--laranja)}
 
-/* 5. Por que */
-.sec-escura{background:var(--grafite);color:#F4F4F5}
-.sec-escura .titulo-secao{color:#F4F4F5}
-.porque-grid{display:grid;gap:16px;margin-top:36px}
-.porque-foto img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
-.motivos{display:grid;gap:14px}
-.motivo{background:var(--grafite-2);border-radius:16px;padding:24px;border:1px solid #3A3F46}
-.motivo svg{width:30px;height:30px;color:var(--laranja);margin-bottom:14px}
-.motivo h3{color:#F4F4F5}
-.motivo p{color:#C9CCD1;margin-top:8px}
+/* Antes e depois */
+.comparar{position:relative;max-width:640px;aspect-ratio:1;margin-top:40px;border-radius:24px;overflow:hidden;border:1px solid var(--linha);user-select:none;touch-action:pan-y;cursor:ew-resize}
+.comparar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.comparar .depois{clip-path:inset(0 0 0 var(--corte,50%))}
+.comparar .linha{position:absolute;top:0;bottom:0;left:var(--corte,50%);width:3px;background:var(--laranja);transform:translateX(-50%)}
+.comparar .puxador{position:absolute;top:50%;left:var(--corte,50%);transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:var(--laranja);color:#16181B;display:grid;place-items:center;font-weight:900;font-size:20px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+.comparar .rot{position:absolute;bottom:14px;padding:6px 12px;border-radius:999px;font-weight:800;font-size:12px;letter-spacing:.14em;background:rgba(18,19,22,.8)}
+.rot.a{left:14px}.rot.d{right:14px;color:var(--laranja)}
+.dupla{display:grid;gap:40px;align-items:center}
+.selos{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.selos span{border:1px solid var(--linha);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--suave)}
 
-/* 6. Depoimentos */
-.depoimentos-grade{display:grid;gap:16px;margin-top:36px}
-.depoimento{border:2px dashed #D6D1C9;border-radius:16px;padding:24px;background:#FBFAF8}
-.depoimento .estrelas{color:var(--laranja);letter-spacing:3px;font-size:18px}
-.depoimento blockquote{margin:12px 0 16px;color:#8A847B;font-style:italic}
-.depoimento cite{font-style:normal;font-weight:800;color:#8A847B}
-.marca-substituir{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:#FEF3C7;color:#92400E;padding:4px 8px;border-radius:6px}
+/* Seminovos */
+.grade{display:grid;gap:18px;margin-top:44px}
+.semi{border-radius:22px;overflow:hidden;background:var(--fundo-2);border:1px solid var(--linha);display:flex;flex-direction:column;transition:transform .35s,border-color .35s}
+.semi:hover{transform:translateY(-6px);border-color:rgba(242,92,31,.5)}
+.semi button.capa{position:relative;border:0;padding:0;background:#0E0F11;cursor:zoom-in;aspect-ratio:4/5;overflow:hidden}
+.semi .capa img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.semi:hover .capa img{transform:scale(1.05)}
+.semi .qtd{position:absolute;right:12px;bottom:12px;background:rgba(18,19,22,.85);padding:6px 12px;border-radius:999px;font-weight:800;font-size:13px}
+.semi .corpo{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.semi h3{margin:0;font-size:20px}.semi .cfg{color:var(--suave);font-size:14px;line-height:1.5}
+.semi .preco{font-weight:900;font-size:30px;letter-spacing:-.02em;margin-top:6px}.semi .preco small{font-size:14px;color:var(--suave);font-weight:600;display:block;letter-spacing:0}
+.semi .btn{margin-top:auto;min-height:48px;font-size:15px}
+.semi .gar{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--laranja)}
 
-/* 7. Chamada final */
-.chamada{background:var(--laranja);color:#fff;text-align:center;padding:76px 0}
-.chamada h2{font-size:clamp(32px,8vw,52px);max-width:16ch;margin:0 auto 30px;color:#fff}
+/* Como funciona */
+.passos{display:grid;gap:14px;margin-top:44px;counter-reset:p}
+.passo{padding:26px;border-radius:20px;border:1px solid var(--linha);background:linear-gradient(160deg,rgba(255,255,255,.04),transparent)}
+.passo::before{counter-increment:p;content:"0" counter(p);font-weight:900;font-size:44px;color:var(--laranja);line-height:1}
+.passo h3{margin:14px 0 6px;font-size:21px}.passo p{margin:0;color:var(--suave)}
 
-/* 8. Rodapé */
-.rodape{background:var(--grafite);color:#C9CCD1;padding:52px 0 110px;font-size:15px}
-.rodape-grid{display:grid;gap:28px}
-.rodape .logo{width:210px;height:auto}
-.rodape h3{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#F4F4F5;margin-bottom:10px}
-.rodape a{color:#F4F4F5;text-decoration:none;font-weight:700}
-.rodape a:hover{color:var(--laranja)}
-.rodape .copy{border-top:1px solid #3A3F46;margin-top:36px;padding-top:20px;font-size:14px}
-.pendente{color:#8F949B}
+/* Chamada final */
+.final{text-align:center;padding:clamp(90px,14vw,170px) 0;overflow:hidden;isolation:isolate}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(50% 60% at 50% 60%,rgba(242,92,31,.3),transparent 70%)}
+.final .titulo{max-width:14ch;margin-inline:auto}
+.final .acoes{justify-content:center;margin-top:34px}
+footer{border-top:1px solid var(--linha);padding:34px 0 110px;color:var(--suave);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer b{color:var(--texto)}
 
-/* Botão flutuante do WhatsApp */
-.wa-flutuante{position:fixed;right:16px;bottom:16px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px #0005;transition:transform .15s}
-.wa-flutuante:hover{transform:scale(1.06)}
-.wa-flutuante svg{width:32px;height:32px}
+.flutuante{position:fixed;right:18px;bottom:18px;z-index:30;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.flutuante svg{width:32px;height:32px;fill:#fff}
+.aviso-previa{position:fixed;left:12px;bottom:18px;z-index:30;background:rgba(18,19,22,.9);border:1px solid rgba(242,92,31,.5);color:var(--texto);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700}
 
-@media (max-width:719px){
-  .btn{padding:0 18px;font-size:17px}
-  .topo .btn,.chamada .btn{width:100%}
+/* Galeria (mesma do site atual) */
+.galeria{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:#0E0F11;color:#fff}.galeria::backdrop{background:#0E0F11}
+.g-topo{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:linear-gradient(rgba(14,15,17,.9),transparent)}
+.g-topo b{font-size:16px}.g-topo small{display:block;color:var(--suave)}
+.g-fechar{width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:24px;cursor:pointer}
+.g-trilho{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.g-trilho::-webkit-scrollbar{display:none}
+.g-slide{flex:0 0 100%;height:100%;scroll-snap-align:center;overflow:auto;display:grid;place-items:center;padding:72px 0 64px}
+.g-slide img{max-width:100%;max-height:100%;object-fit:contain;cursor:zoom-in}.g-slide.zoom{place-items:start}.g-slide.zoom img{max-width:none;max-height:none;width:220%}
+.g-rodape{position:absolute;left:0;right:0;bottom:0;text-align:center;padding:14px;background:linear-gradient(transparent,rgba(14,15,17,.9));font-size:14px}.g-rodape b{color:var(--laranja)}
+
+@media (min-width:760px){
+  .anatomia .fixo{grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
+  .anatomia .cab{grid-column:1/-1;padding-top:0}
+  .palco{height:min(68vh,600px)}
+  .dupla{grid-template-columns:1fr 1fr}
+  .grade{grid-template-columns:repeat(2,1fr)}.passos{grid-template-columns:repeat(3,1fr)}
 }
-@media (min-width:720px){
-  section{padding:96px 0}
-  .cards-servicos,.motivos,.grade-seminovos,.depoimentos-grade{grid-template-columns:repeat(2,1fr)}
-  .passos{grid-template-columns:repeat(3,1fr);gap:28px}
-  .passo{grid-template-columns:1fr;border-top:3px solid var(--laranja);padding-top:24px}
-  .rodape-grid{grid-template-columns:1.4fr 1fr 1fr}
-  .barra-wa{display:inline-flex}
-}
-@media (min-width:1000px){
-  .topo{padding-bottom:96px}
-  .topo-grid{grid-template-columns:1.25fr .75fr}
-  .cards-servicos{grid-template-columns:repeat(4,1fr)}
-  .porque-grid{grid-template-columns:.8fr 1.2fr;align-items:stretch}
-  .porque-foto img{aspect-ratio:auto;height:100%}
-  .motivos{grid-template-columns:repeat(2,1fr)}
-  .grade-seminovos{grid-template-columns:repeat(4,1fr)}
-  .depoimentos-grade{grid-template-columns:repeat(3,1fr)}
-  .wa-flutuante{right:28px;bottom:28px}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.wa-flutuante{transition:none}}
+@media (min-width:1100px){.grade{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:759px){.heroi-foto{width:100%;right:0;opacity:.35;-webkit-mask-image:linear-gradient(transparent,#000 30%,#000 55%,transparent);mask-image:linear-gradient(transparent,#000 30%,#000 55%,transparent)}.partes li{padding:8px 10px}.partes small{display:none}.partes li.ativa small{display:block}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.aparece{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<!-- 1. Topo -->
-<header class="topo">
+<header class="topo" id="topo"><div class="wrap">
+  <a class="marca" href="#">INFO<span>ZENHA</span></a>
+  <a class="btn btn-wa" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp</a>
+</div></header>
+
+<section class="heroi">
+  <div class="nevoa" aria-hidden="true"></div><div class="grao" aria-hidden="true"></div>
+  <div class="heroi-foto" aria-hidden="true"><img id="foto-heroi" src="assets/img/fotos/erick-notebook-1100.webp" alt=""></div>
   <div class="wrap">
-    <div class="barra">
-      <a href="./" aria-label="InfoZenha, início">
-        <svg class="logo" viewBox="0 0 480 140" width="480" height="140" role="img" aria-label="InfoZenha - Notebooks e Tecnologia"><defs><path id="iz-aro-topo" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><g transform="scale(0.7)"><circle cx="100" cy="100" r="95" fill="none" stroke="#F25C1F" stroke-width="6"/><circle cx="100" cy="100" r="62" fill="none" stroke="#F4F4F5" stroke-width="2.5"/><text font-family="Archivo, Arial, sans-serif" font-size="14" font-weight="800" fill="#F4F4F5"><textPath href="#iz-aro-topo" textLength="470" lengthAdjust="spacing">GOIÂNIA • DESDE 2001 • GOIÂNIA • DESDE 2001 •</textPath></text><rect x="70" y="72" width="60" height="40" rx="5" fill="none" stroke="#F25C1F" stroke-width="8"/><path d="M58 118 H142 L137 128 H63 Z" fill="#F25C1F"/></g><text x="158" y="80" font-family="Archivo, Arial, sans-serif" font-size="50" font-weight="900" fill="#F4F4F5">INFO<tspan fill="#F25C1F">ZENHA</tspan></text><text x="160" y="106" font-family="Archivo, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4" fill="#C9CCD1">NOTEBOOKS E TECNOLOGIA</text></svg>
-      </a>
-      <a class="barra-wa" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">(62) 99208-5702</a>
+    <span class="eyebrow">Goiânia · desde 2001</span>
+    <h1>Seu notebook <b>de volta</b>, <em>como novo.</em></h1>
+    <p class="sub">Assistência técnica de notebooks com quem faz isso há mais de 20 anos. SSD, memória, carcaça e limpeza completa, com busca e entrega e garantia de 90 dias.</p>
+    <div class="acoes">
+      <a class="btn btn-wa" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento <span class="seta">↗</span></a>
+      <a class="btn btn-ghost" href="#seminovos">Ver seminovos</a>
     </div>
-    <div class="topo-grid">
-      <div>
-        <span class="rotulo">Assistência técnica em Goiânia</span>
-        <h1>Seu notebook em boas mãos <span>desde 2001.</span></h1>
-        <p class="sub">Assistência técnica de notebooks em Goiânia, com atendimento direto com o técnico, garantia em todos os serviços e busca e entrega do seu equipamento.</p>
-        <a class="btn" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.5-.7-2.2-1.4-.6-.5-1.1-1.2-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
-          Pedir orçamento no WhatsApp
-        </a>
-        <ul class="selos">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Desde 2001</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Garantia em todos os serviços</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Busca e entrega</li>
-        </ul>
-      </div>
-      <figure class="topo-foto">
-        <img src="assets/img/fotos/erick-notebook-1100.webp" srcset="assets/img/fotos/erick-notebook-640.webp 640w, assets/img/fotos/erick-notebook-1100.webp 1100w" sizes="(min-width:1000px) 420px, calc(100vw - 40px)" width="1100" height="963" fetchpriority="high" decoding="async" alt="Erick Zenha, técnico da InfoZenha, na bancada segurando um notebook aberto para manutenção">
-        <figcaption>Você fala direto com o técnico que cuida do seu notebook.</figcaption>
-      </figure>
+    <div class="numeros">
+      <div><strong data-conta="25">0</strong><small>anos consertando notebooks</small></div>
+      <div><strong><span>+</span><b data-conta="3800" style="font-weight:900">0</b></strong><small>clientes atendidos</small></div>
+      <div><strong><span data-conta="90">0</span></strong><small>dias de garantia</small></div>
+      <div><strong class="txt">Busca <span>+</span> entrega</strong><small>em Goiânia e região</small></div>
     </div>
   </div>
-</header>
+  <div class="rolar" aria-hidden="true">role ↓</div>
+</section>
 
-<main>
-<!-- 2. Serviços -->
-<section class="servicos" id="servicos">
-  <div class="wrap">
-    <span class="rotulo">Serviços</span>
-    <h2 class="titulo-secao">O que fazemos</h2>
-    <div class="cards-servicos">
-      <article class="servico">
-        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h6M7 14h3M17 10v4"/></svg></div>
-        <h3>Upgrade de SSD</h3>
-        <p>Seu notebook liga e abre programas muito mais rápido. Instalamos o SSD, migramos seus arquivos e entregamos tudo funcionando como antes, só que veloz.</p>
-      </article>
-      <article class="servico">
-        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="9" rx="1.5"/><path d="M6 10.5h2M10 10.5h2M14 10.5h2M5 16v3M9 16v3M15 16v3M19 16v3"/></svg></div>
-        <h3>Upgrade de memória</h3>
-        <p>Mais fôlego para trabalhar com várias janelas, planilhas e reuniões ao mesmo tempo. Instalação e teste de estabilidade inclusos.</p>
-      </article>
-      <article class="servico">
-        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 16h20l-1.5 3h-17Z"/><path d="m14.5 7.5-3 3 1.5 1.5 3-3"/></svg></div>
-        <h3>Reparo de carcaça</h3>
-        <p>Dobradiça quebrada, base ou tampa danificada. Restauramos a estrutura antes que o estrago chegue à tela.</p>
-      </article>
-      <article class="servico">
-        <div class="icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M12 10c0-3 1-6 4-6 2 0 3 2 2 4-1 1.5-3 2-6 2M14 12c3 0 6 1 6 4 0 2-2 3-4 2-1.5-1-2-3-2-6M12 14c0 3-1 6-4 6-2 0-3-2-2-4 1-1.5 3-2 6-2M10 12c-3 0-6-1-6-4 0-2 2-3 4-2 1.5 1 2 3 2 6"/></svg></div>
-        <h3>Limpeza completa</h3>
-        <p>Limpeza interna, troca de pasta térmica e revisão geral. O notebook esquenta menos, faz menos barulho e dura mais.</p>
-      </article>
+<section class="anatomia" id="anatomia">
+  <div class="fixo"><div class="wrap" style="display:contents">
+    <div class="cab wrap"><span class="eyebrow">Anatomia do conserto</span><h2 class="titulo">Cada camada, <span class="fino">um cuidado.</span></h2></div>
+    <div class="palco"><div class="moldura" id="moldura">
+      <img src="assets/img/novo/anat-1.webp" alt="Dobradiça solta na carcaça do notebook" class="ativa">
+      <img src="assets/img/novo/anat-2.webp" alt="Fixação quebrada na carcaça" loading="lazy">
+      <img src="assets/img/novo/anat-3.webp" alt="SSD e memória instalados" loading="lazy">
+      <img src="assets/img/novo/anat-4.webp" alt="Poeira sendo retirada do cooler com pinça" loading="lazy">
+      <img src="assets/img/novo/anat-5.webp" alt="Câmera térmica medindo a temperatura da placa" loading="lazy">
+      <span class="etiqueta-real">Foto real da bancada</span>
+    </div></div>
+    <div class="wrap" style="width:auto;margin:0;padding:0 20px">
+      <div class="progresso"><i id="progresso"></i></div>
+      <ol class="partes" id="partes" style="margin-top:12px">
+        <li data-c="c-tela"><span class="n">01</span><div><b>Tela, tampa e dobradiça</b><small>Tampa abrindo torta ou estalando? Reparo a fixação da dobradiça antes que a carcaça trinque.</small></div></li>
+        <li data-c="c-teclado"><span class="n">02</span><div><b>Teclado e carcaça</b><small>Teclas falhando, carcaça quebrada ou parafusos faltando: reparo com acabamento de fábrica.</small></div></li>
+        <li data-c="c-ssd,c-memoria"><span class="n">03</span><div><b>SSD e memória</b><small>O upgrade que faz um notebook de 5 anos ligar em segundos. Sem trocar de aparelho.</small></div></li>
+        <li data-c="c-cooler"><span class="n">04</span><div><b>Cooler e pasta térmica</b><small>Limpeza completa e pasta nova: menos calor, menos barulho, mais desempenho.</small></div></li>
+        <li data-c="c-placa"><span class="n">05</span><div><b>Placa e diagnóstico</b><small>Diagnóstico honesto antes de qualquer serviço. Você aprova o orçamento primeiro.</small></div></li>
+      </ol>
     </div>
-    <p class="outro">Outro problema? <a data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chame no WhatsApp</a> e fazemos o diagnóstico.</p>
+  </div></div>
+</section>
+
+<section class="secao"><div class="wrap dupla">
+  <div class="aparece">
+    <span class="eyebrow">Limpeza completa</span>
+    <h2 class="titulo">Arraste e veja <span class="fino">a diferença.</span></h2>
+    <p class="lead">Poeira trava o cooler, o notebook esquenta, fica lento e desliga sozinho. Na limpeza completa a gente desmonta, limpa, troca a pasta térmica e mede a temperatura com câmera térmica.</p>
+    <div class="selos"><span>Câmera térmica</span><span>Pasta térmica nova</span><span>Teste antes e depois</span></div>
+  </div>
+  <div class="comparar aparece" id="comparar" aria-label="Comparação antes e depois da limpeza">
+    <img src="assets/img/novo/antes.webp" alt="Cooler cheio de poeira antes da limpeza">
+    <img class="depois" src="assets/img/novo/depois.webp" alt="Cooler limpo depois da limpeza">
+    <div class="linha"></div><div class="puxador" aria-hidden="true">⇆</div>
+    <span class="rot a">ANTES</span><span class="rot d">DEPOIS</span>
+  </div>
+</div></section>
+
+<section class="secao" id="seminovos" style="background:linear-gradient(transparent,rgba(255,255,255,.02),transparent)"><div class="wrap">
+  <div class="aparece"><span class="eyebrow">Seminovos</span><h2 class="titulo">Revisados na bancada. <span class="fino">Com garantia.</span></h2>
+  <p class="lead">Fotos reais de cada aparelho. Toque na foto para ver todas.</p></div>
+  <div class="grade" id="lista"></div>
+</div></section>
+
+<section class="secao"><div class="wrap">
+  <div class="aparece"><span class="eyebrow">Como funciona</span><h2 class="titulo">Simples, <span class="fino">do começo ao fim.</span></h2></div>
+  <div class="passos">
+    <div class="passo aparece"><h3>Chame no WhatsApp</h3><p>Conte o problema. Você fala direto com o técnico, sem atendente.</p></div>
+    <div class="passo aparece"><h3>Busca e diagnóstico</h3><p>Buscamos o notebook e você recebe o orçamento antes de qualquer serviço.</p></div>
+    <div class="passo aparece"><h3>Entrega com garantia</h3><p>Devolvemos testado, com ordem de serviço e 90 dias de garantia.</p></div>
+  </div>
+</div></section>
+
+<section class="final">
+  <div class="wrap aparece">
+    <span class="eyebrow">Atendimento direto com o técnico</span>
+    <h2 class="titulo">Seu notebook merece <span class="fino">quem entende.</span></h2>
+    <div class="acoes"><a class="btn btn-wa" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Chamar no WhatsApp <span class="seta">↗</span></a></div>
   </div>
 </section>
 
-<!-- 3. Como funciona -->
-<section id="como-funciona">
-  <div class="wrap">
-    <span class="rotulo">Como funciona</span>
-    <h2 class="titulo-secao">Simples do começo ao fim</h2>
-    <ol class="passos">
-      <li class="passo"><div><h3>Você chama</h3><p>Conte o modelo e o que está acontecendo pelo WhatsApp.</p></div></li>
-      <li class="passo"><div><h3>Nós buscamos</h3><p>Combinamos o melhor horário para retirar o equipamento.</p></div></li>
-      <li class="passo"><div><h3>Entregamos pronto</h3><p>Seu notebook volta revisado, com ordem de serviço e garantia.</p></div></li>
-    </ol>
-  </div>
-</section>
+<footer><div class="wrap">
+  <div><b>INFOZENHA</b> · Notebooks e Tecnologia · Goiânia, desde 2001</div>
+  <div>WhatsApp <b>(62) 99208-5702</b> · <a href="https://www.instagram.com/infozenhanotebooks/" target="_blank" rel="noopener">@infozenhanotebooks</a></div>
+</div></footer>
 
-<!-- 4. Seminovos (os cards vêm do arquivo seminovos.json) -->
-<section class="seminovos" id="seminovos">
-  <div class="wrap">
-    <span class="rotulo">Seminovos</span>
-    <h2 class="titulo-secao">Seminovos revisados, com garantia</h2>
-    <p class="intro">Cada notebook passa pela nossa bancada antes de ser vendido: limpeza, testes e, quando vale a pena, upgrade de SSD e memória. Você compra de quem entende e leva garantia da InfoZenha.</p>
-    <div class="grade-seminovos" id="lista-seminovos" aria-live="polite"></div>
-    <p class="vazio" id="seminovos-vazio" hidden>Novos seminovos toda semana. <a data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20os%20seminovos%20dispon%C3%ADveis." target="_blank" rel="noopener">Chame no WhatsApp</a> para saber os disponíveis.</p>
-  </div>
-</section>
+<a class="flutuante" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg></a>
 
-<!-- 5. Por que a InfoZenha -->
-<section class="sec-escura" id="por-que">
-  <div class="wrap">
-    <span class="rotulo">Por que a InfoZenha</span>
-    <h2 class="titulo-secao">Por que nossos clientes voltam</h2>
-    <div class="porque-grid">
-    <picture class="porque-foto">
-      <source media="(min-width:1000px)" srcset="assets/img/fotos/bancada-retrato-720.webp" width="720" height="900">
-      <img src="assets/img/fotos/bancada-paisagem-800.webp" width="800" height="600" loading="lazy" decoding="async" alt="Técnico da InfoZenha concentrado em um reparo na bancada">
-    </picture>
-    <div class="motivos">
-      <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg><h3>Mais de 20 anos de experiência</h3><p>Atendendo Goiânia desde 2001.</p></div>
-      <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><h3>Atendimento direto com o técnico</h3><p>Você fala com quem vai cuidar do seu equipamento.</p></div>
-      <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg><h3>Garantia em tudo</h3><p>Serviços e seminovos com garantia e ordem de serviço.</p></div>
-      <div class="motivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg><h3>Agilidade</h3><p>Resposta rápida e prazo combinado antes de começar.</p></div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- 6. Depoimentos: ESCONDIDA até existirem avaliações reais no Google (não inventar).
-     Para mostrar: troque o texto dos 3 cards pelas avaliações reais e apague o atributo "hidden" abaixo. -->
-<section id="depoimentos" hidden>
-  <div class="wrap">
-    <span class="rotulo">Depoimentos</span>
-    <h2 class="titulo-secao">Quem já confiou</h2>
-    <div class="depoimentos-grade">
-      <figure class="depoimento" style="margin:0"><span class="marca-substituir">Espaço para avaliação do Google</span><div class="estrelas" aria-hidden="true">★★★★★</div><blockquote>[Depoimento real de cliente, copiado da avaliação no Google.]</blockquote><figcaption><cite>[Nome do cliente]</cite></figcaption></figure>
-      <figure class="depoimento" style="margin:0"><span class="marca-substituir">Espaço para avaliação do Google</span><div class="estrelas" aria-hidden="true">★★★★★</div><blockquote>[Depoimento real de cliente, copiado da avaliação no Google.]</blockquote><figcaption><cite>[Nome do cliente]</cite></figcaption></figure>
-      <figure class="depoimento" style="margin:0"><span class="marca-substituir">Espaço para avaliação do Google</span><div class="estrelas" aria-hidden="true">★★★★★</div><blockquote>[Depoimento real de cliente, copiado da avaliação no Google.]</blockquote><figcaption><cite>[Nome do cliente]</cite></figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- 7. Chamada final -->
-<section class="chamada">
-  <div class="wrap">
-    <h2>Seu notebook merece atenção de especialista.</h2>
-    <a class="btn btn-escuro" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.5-.7-2.2-1.4-.6-.5-1.1-1.2-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
-      Falar no WhatsApp
-    </a>
-  </div>
-</section>
-</main>
-
-<!-- 8. Rodapé -->
-<footer class="rodape">
-  <div class="wrap">
-    <div class="rodape-grid">
-      <div>
-        <svg class="logo" viewBox="0 0 480 140" width="480" height="140" role="img" aria-label="InfoZenha - Notebooks e Tecnologia"><defs><path id="iz-aro-rodape" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><g transform="scale(0.7)"><circle cx="100" cy="100" r="95" fill="none" stroke="#F25C1F" stroke-width="6"/><circle cx="100" cy="100" r="62" fill="none" stroke="#F4F4F5" stroke-width="2.5"/><text font-family="Archivo, Arial, sans-serif" font-size="14" font-weight="800" fill="#F4F4F5"><textPath href="#iz-aro-rodape" textLength="470" lengthAdjust="spacing">GOIÂNIA • DESDE 2001 • GOIÂNIA • DESDE 2001 •</textPath></text><rect x="70" y="72" width="60" height="40" rx="5" fill="none" stroke="#F25C1F" stroke-width="8"/><path d="M58 118 H142 L137 128 H63 Z" fill="#F25C1F"/></g><text x="158" y="80" font-family="Archivo, Arial, sans-serif" font-size="50" font-weight="900" fill="#F4F4F5">INFO<tspan fill="#F25C1F">ZENHA</tspan></text><text x="160" y="106" font-family="Archivo, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4" fill="#C9CCD1">NOTEBOOKS E TECNOLOGIA</text></svg>
-        <p style="margin-top:14px;max-width:320px">Assistência técnica de notebooks e seminovos revisados, com garantia.</p>
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <p>WhatsApp: <a data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">(62) 99208-5702</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/infozenhanotebooks/" target="_blank" rel="noopener">@infozenhanotebooks</a></p>
-      </div>
-      <div>
-        <h3>Região atendida</h3>
-        <p>Goiânia, Aparecida de Goiânia e região metropolitana. Busca e entrega do seu equipamento.</p>
-      </div>
-    </div>
-    <p class="copy">© InfoZenha · desde 2001</p>
-  </div>
-</footer>
-
-<!-- Botão flutuante do WhatsApp (sempre visível) -->
-<a class="wa-flutuante" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar com a InfoZenha no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.5-.7-2.2-1.4-.6-.5-1.1-1.2-1.3-1.7-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.7 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
-</a>
-
-<dialog class="galeria" id="galeria" aria-label="Fotos do seminovo">
-  <div class="galeria-topo"><div class="galeria-titulo" id="galeria-titulo"></div><button class="galeria-fechar" type="button" id="galeria-fechar" aria-label="Fechar fotos">×</button></div>
-  <button class="galeria-seta ant" type="button" id="galeria-ant" aria-label="Foto anterior">‹</button>
-  <div class="galeria-trilho" id="galeria-trilho"></div>
-  <button class="galeria-seta prox" type="button" id="galeria-prox" aria-label="Próxima foto">›</button>
-  <div class="galeria-rodape" id="galeria-rodape"></div>
-</dialog>
+<dialog class="galeria" id="galeria"><div class="g-topo"><div id="g-tit"></div><button class="g-fechar" id="g-fechar" aria-label="Fechar">×</button></div><div class="g-trilho" id="g-trilho"></div><div class="g-rodape" id="g-rod"></div></dialog>
 
 <script>
-// Seminovos: lidos do arquivo seminovos.json (veja o README para atualizar)
 (function(){
-  var WA='5562992085702';
-  var lista=document.getElementById('lista-seminovos'),vazio=document.getElementById('seminovos-vazio');
-  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-  function preco(v){return typeof v==='number'?v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}):(v||'Consulte')}
-  // Galeria em tela cheia: deslizar para o lado, setas, teclado e toque para zoom
-  var gal=document.getElementById('galeria'),trilho=document.getElementById('galeria-trilho'),rodape=document.getElementById('galeria-rodape'),fotosAtuais=[];
-  function fotosDe(s){return s.fotos&&s.fotos.length?s.fotos:(s.foto?[{src:s.foto,legenda:''}]:[])}
-  function slideAtual(){return Math.round(trilho.scrollLeft/Math.max(1,trilho.clientWidth))}
-  function atualizarRodape(){var i=Math.min(slideAtual(),fotosAtuais.length-1),f=fotosAtuais[i]||{};rodape.innerHTML='<b>'+(i+1)+'/'+fotosAtuais.length+'</b>'+(f.legenda?' · '+esc(f.legenda):'')+'<br><small>Toque na foto para ampliar</small>'}
-  function irPara(i){i=Math.max(0,Math.min(fotosAtuais.length-1,i));trilho.scrollTo({left:i*trilho.clientWidth,behavior:'smooth'})}
-  function abrirGaleria(s){
-    fotosAtuais=fotosDe(s);if(!fotosAtuais.length)return;
-    document.getElementById('galeria-titulo').innerHTML=esc(s.modelo)+'<small>'+esc(preco(s.preco))+(s.garantia?' · garantia de '+esc(s.garantia):'')+'</small>';
-    trilho.innerHTML=fotosAtuais.map(function(f,i){return '<div class="galeria-slide"><img src="'+esc(f.src)+'" alt="'+esc(s.modelo+(f.legenda?' – '+f.legenda:''))+'" loading="'+(i?'lazy':'eager')+'" decoding="async"></div>'}).join('');
-    gal.showModal();trilho.scrollLeft=0;atualizarRodape();
+  var reduz=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+  var brl=function(v){return typeof v==='number'?v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}):(v||'Consulte')};
+
+  // Topo fica sólido ao rolar; foto do herói com leve paralaxe
+  var topo=document.getElementById('topo'),foto=document.getElementById('foto-heroi');
+  // Anatomia: o notebook se abre em camadas conforme a rolagem
+  var sec=document.getElementById('anatomia'),fotos=[].slice.call(document.querySelectorAll('#moldura img')),itens=[].slice.call(document.querySelectorAll('#partes li')),barra=document.getElementById('progresso');
+  function quadro(){
+    var y=scrollY;topo.classList.toggle('solido',y>40);
+    if(!reduz&&foto)foto.style.transform='translate3d(0,'+(y*.18)+'px,0) scale(1.06)';
+    var r=sec.getBoundingClientRect(),total=sec.offsetHeight-innerHeight,p=Math.min(1,Math.max(0,-r.top/total));
+    barra.style.width=(p*100)+'%';
+    var ativo=Math.min(itens.length-1,Math.floor(p*itens.length*1.02));
+    itens.forEach(function(li,i){li.classList.toggle('ativa',i===ativo)});
+    fotos.forEach(function(f,i){f.classList.toggle('ativa',i===ativo)});
   }
-  trilho.addEventListener('scroll',function(){atualizarRodape()},{passive:true});
-  trilho.addEventListener('click',function(e){var sl=e.target.closest('.galeria-slide');if(sl&&e.target.tagName==='IMG')sl.classList.toggle('zoom')});
-  document.getElementById('galeria-fechar').onclick=function(){gal.close()};
-  document.getElementById('galeria-ant').onclick=function(){irPara(slideAtual()-1)};
-  document.getElementById('galeria-prox').onclick=function(){irPara(slideAtual()+1)};
-  gal.addEventListener('keydown',function(e){if(e.key==='ArrowRight')irPara(slideAtual()+1);if(e.key==='ArrowLeft')irPara(slideAtual()-1)});
-  gal.addEventListener('close',function(){trilho.innerHTML=''});
-  var itensMostrados=[];
-  lista.addEventListener('click',function(e){var b=e.target.closest('[data-galeria]');if(b)abrirGaleria(itensMostrados[+b.dataset.galeria])});
-  function mostrar(itens){
-    itens=(itens||[]).filter(function(s){return s&&s.disponivel!==false});
-    itensMostrados=itens;
-    if(!itens.length){lista.innerHTML='';vazio.hidden=false;return}
-    vazio.hidden=true;
-    lista.innerHTML=itens.map(function(s,n){
-      var msg=encodeURIComponent('Olá! Vim pelo site e tenho interesse no seminovo '+s.modelo+'.');
-      var qtd=fotosDe(s).length;
-      var foto=s.foto?'<button type="button" class="abrir-galeria" data-galeria="'+n+'" aria-label="Ver '+qtd+' foto'+(qtd>1?'s':'')+' do '+esc(s.modelo)+'"><img src="'+esc(s.foto)+'" alt="'+esc(s.modelo)+'" loading="lazy" decoding="async" width="800" height="600">'+(qtd>1?'<span class="qtd-fotos">📷 '+qtd+' fotos</span>':'')+'</button>':'<div class="foto" role="img" aria-label="Espaço para foto do notebook">[FOTO]</div>';
-      return '<article class="seminovo">'+foto+'<div class="seminovo-corpo">'+(s.exemplo?'<span class="etiqueta-exemplo">EXEMPLO</span>':'')+
-        '<h3>'+esc(s.modelo)+'</h3><p class="config">'+esc(s.configuracao)+'</p>'+
-        (s.garantia?'<span class="garantia">Garantia de '+esc(s.garantia)+'</span>':'')+
-        '<p class="preco">'+esc(preco(s.preco))+'</p>'+(s.condicao?'<p class="condicao">'+esc(s.condicao)+'</p>':'')+
-        '<a class="btn" href="https://wa.me/'+WA+'?text='+msg+'" target="_blank" rel="noopener">Tenho interesse</a></div></article>';
-    }).join('');
-  }
-  fetch('seminovos.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){mostrar(d.seminovos)}).catch(function(){mostrar([])});
+  addEventListener('scroll',function(){requestAnimationFrame(quadro)},{passive:true});addEventListener('resize',quadro);quadro();
+
+  // Entradas suaves e números que contam
+  // Verificado a cada rolagem (mais confiável que IntersectionObserver em navegadores embutidos)
+  var io={observe:function(){revelar()}};
+  function revelar(){document.querySelectorAll('.aparece:not(.visivel)').forEach(function(el){if(el.getBoundingClientRect().top<innerHeight*.92)el.classList.add('visivel')})}
+  addEventListener('scroll',revelar,{passive:true});addEventListener('resize',revelar);revelar();setTimeout(revelar,300);
+  document.querySelectorAll('[data-conta]').forEach(function(el){var alvo=+el.dataset.conta,t0=null;function passo(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1400);el.textContent=Math.round(alvo*(1-Math.pow(1-k,3))).toLocaleString('pt-BR');if(k<1)requestAnimationFrame(passo)}reduz?el.textContent=alvo.toLocaleString('pt-BR'):requestAnimationFrame(passo)});
+
+  // Antes e depois arrastável
+  var cmp=document.getElementById('comparar');
+  function corte(x){var r=cmp.getBoundingClientRect();cmp.style.setProperty('--corte',Math.min(100,Math.max(0,(x-r.left)/r.width*100))+'%')}
+  cmp.addEventListener('pointerdown',function(e){cmp.setPointerCapture(e.pointerId);corte(e.clientX)});
+  cmp.addEventListener('pointermove',function(e){if(e.buttons||e.pointerType==='touch')corte(e.clientX)});
+
+  // Seminovos (mesmo seminovos.json do site) + galeria
+  var lista=document.getElementById('lista'),gal=document.getElementById('galeria'),tr=document.getElementById('g-trilho'),rod=document.getElementById('g-rod'),dados=[],atuais=[];
+  var fotosDe=function(s){return s.fotos&&s.fotos.length?s.fotos.map(function(f){return{src:f.src,legenda:f.legenda}}):(s.foto?[{src:s.foto,legenda:''}]:[])};
+  var idx=function(){return Math.round(tr.scrollLeft/Math.max(1,tr.clientWidth))};
+  function rodape(){var i=Math.min(idx(),atuais.length-1),f=atuais[i]||{};rod.innerHTML='<b>'+(i+1)+'/'+atuais.length+'</b>'+(f.legenda?' · '+esc(f.legenda):'')+'<br><small>Toque na foto para ampliar</small>'}
+  function abrir(n){var s=dados[n];atuais=fotosDe(s);document.getElementById('g-tit').innerHTML='<b>'+esc(s.modelo)+'</b><small>'+esc(brl(s.preco))+' · garantia de '+esc(s.garantia||'90 dias')+'</small>';tr.innerHTML=atuais.map(function(f,i){return'<div class="g-slide"><img src="'+esc(f.src)+'" alt="'+esc(s.modelo+' – '+f.legenda)+'" loading="'+(i?'lazy':'eager')+'"></div>'}).join('');gal.showModal();tr.scrollLeft=0;rodape()}
+  tr.addEventListener('scroll',rodape,{passive:true});tr.addEventListener('click',function(e){if(e.target.tagName==='IMG')e.target.parentNode.classList.toggle('zoom')});
+  document.getElementById('g-fechar').onclick=function(){gal.close()};gal.addEventListener('close',function(){tr.innerHTML=''});
+  lista.addEventListener('click',function(e){var b=e.target.closest('[data-n]');if(b)abrir(+b.dataset.n)});
+  fetch('seminovos.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){
+    dados=(d.seminovos||[]).filter(function(s){return s.disponivel!==false});
+    lista.innerHTML=dados.map(function(s,n){var q=fotosDe(s).length,msg=encodeURIComponent('Olá! Vim pelo site e tenho interesse no seminovo '+s.modelo+'.');
+      return'<article class="semi aparece"><button class="capa" data-n="'+n+'" aria-label="Ver fotos do '+esc(s.modelo)+'"><img src="'+esc(s.foto)+'" alt="'+esc(s.modelo)+'" loading="lazy"><span class="qtd">📷 '+q+' fotos</span></button><div class="corpo"><span class="gar">Garantia de '+esc(s.garantia)+'</span><h3>'+esc(s.modelo)+'</h3><p class="cfg">'+esc(s.configuracao)+'</p><p class="preco">'+esc(brl(s.preco))+'<small>'+esc(s.condicao||'')+'</small></p><a class="btn btn-wa" href="https://wa.me/5562992085702?text='+msg+'" target="_blank" rel="noopener">Tenho interesse</a></div></article>'}).join('');
+    lista.querySelectorAll('.aparece').forEach(function(el){io.observe(el)});
+  });
 })();
 </script>
 </body>
