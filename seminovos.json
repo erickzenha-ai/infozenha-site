@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-26",
+  "atualizado_em": "2026-10-28",
   "seminovos": [
     {
       "modelo": "Dell Inspiron 5590",
@@ -8,7 +8,7 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-dell-inspiron-5590.webp",
-      "disponivel": true,
+      "disponivel": false,
       "fotos": [
         {
           "src": "assets/img/seminovos/dell-inspiron-5590/01.webp",
