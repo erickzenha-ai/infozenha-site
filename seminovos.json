@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-10-28",
+  "atualizado_em": "2026-10-30",
   "seminovos": [
     {
       "modelo": "Dell Inspiron 5590",
@@ -113,6 +113,60 @@
         },
         {
           "src": "assets/img/seminovos/samsung-galaxy-book/05.webp",
+          "legenda": "Configuração real (tela Sobre)"
+        }
+      ]
+    },
+    {
+      "modelo": "Dell Inspiron 15 3511",
+      "configuracao": "Intel Pentium Gold 7505 · 8 GB DDR4 (de fábrica vinha com 4 GB) · SSD 128 GB · tela 15\" Full HD antirreflexo · Windows 11 · bem conservado",
+      "preco": 1600,
+      "condicao": "Até 3x sem juros no cartão",
+      "garantia": "90 dias",
+      "foto": "assets/img/seminovos/dell-inspiron-15-3511/01.webp",
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3511/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3511/02.webp",
+          "legenda": "Teclado e etiqueta"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3511/03.webp",
+          "legenda": "Tampa"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3511/04.webp",
+          "legenda": "Configuração real (tela Sobre)"
+        }
+      ]
+    },
+    {
+      "modelo": "Samsung Book",
+      "configuracao": "Intel Celeron 6305 · 8 GB de memória · SSD Kingston 120 GB (a etiqueta de fábrica cita 256 GB; vale a configuração real) · tela Full HD · com alguns detalhes de uso",
+      "preco": 1300,
+      "condicao": "À vista no Pix",
+      "garantia": "90 dias",
+      "foto": "assets/img/seminovos/samsung-book-celeron/01.webp",
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/samsung-book-celeron/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-book-celeron/02.webp",
+          "legenda": "Teclado e etiqueta de fábrica"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-book-celeron/03.webp",
+          "legenda": "Lateral"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-book-celeron/04.webp",
           "legenda": "Configuração real (tela Sobre)"
         }
       ]
