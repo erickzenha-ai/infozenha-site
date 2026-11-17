@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-03",
+  "atualizado_em": "2026-11-17",
   "seminovos": [
     {
       "modelo": "Dell Inspiron 5590",
@@ -35,7 +35,7 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-lenovo-ideapad.webp",
-      "disponivel": true,
+      "disponivel": false,
       "fotos": [
         {
           "src": "assets/img/seminovos/lenovo-ideapad/01.webp",
@@ -62,7 +62,7 @@
       "condicao": "Até 4x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/fotos/seminovo-dell-vostro-3401.webp",
-      "disponivel": true,
+      "disponivel": false,
       "fotos": [
         {
           "src": "assets/img/seminovos/dell-vostro-3401/01.webp",
@@ -124,7 +124,7 @@
       "condicao": "Até 3x sem juros no cartão",
       "garantia": "90 dias",
       "foto": "assets/img/seminovos/dell-inspiron-15-3511/01.webp",
-      "disponivel": true,
+      "disponivel": false,
       "fotos": [
         {
           "src": "assets/img/seminovos/dell-inspiron-15-3511/01.webp",
