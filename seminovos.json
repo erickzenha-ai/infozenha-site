@@ -170,6 +170,21 @@
           "legenda": "Configuração real (tela Sobre)"
         }
       ]
+    },
+    {
+      "modelo": "Memória DDR5 8 GB para notebook",
+      "configuracao": "DDR5 SODIMM 8 GB 5600 MHz (PC5-5600) · original do Acer Nitro V15 · aceito troca por SSD NVMe de 1 ou 2 TB",
+      "preco": 550,
+      "condicao": "Aceita cartão",
+      "garantia": "90 dias",
+      "foto": "assets/img/seminovos/memoria-ddr5-8gb/01.webp",
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/memoria-ddr5-8gb/01.webp",
+          "legenda": "Foto real do pente"
+        }
+      ]
     }
   ]
 }
