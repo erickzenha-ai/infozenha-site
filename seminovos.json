@@ -1,6 +1,21 @@
 {
-  "atualizado_em": "2026-11-17",
+  "atualizado_em": "2026-11-24",
   "seminovos": [
+    {
+      "modelo": "Dell Core i5 10ª geração 14\"",
+      "configuracao": "Intel Core i5 10ª geração · 8 GB de memória DDR4 · SSD NVMe 240 GB · tela de 14\" · bateria e carcaça em excelente estado",
+      "preco": 2550,
+      "condicao": "Consulte condições de parcelamento",
+      "garantia": "90 dias",
+      "foto": "assets/img/seminovos/dell-core-i5-10a/01.webp",
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/dell-core-i5-10a/01.webp",
+          "legenda": "Foto real do aparelho"
+        }
+      ]
+    },
     {
       "modelo": "Dell Inspiron 5590",
       "configuracao": "Intel Core i7 10ª geração (i7-10510U) · 16 GB DDR4 · SSD NVMe 256 GB · NVIDIA MX250 2 GB · tela 15,6\" Full HD · teclado iluminado · leitor de digital",

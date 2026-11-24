@@ -152,6 +152,8 @@ section{position:relative}
 .semi h3{margin:0;font-size:20px}.semi .cfg{color:var(--suave);font-size:14px;line-height:1.5}
 .semi .preco{font-weight:900;font-size:30px;letter-spacing:-.02em;margin-top:6px}.semi .preco small{font-size:14px;color:var(--suave);font-weight:600;display:block;letter-spacing:0}
 .semi .btn{margin-top:auto;min-height:48px;font-size:15px}
+.semi.vendido .capa img{filter:grayscale(.7) brightness(.6)}.semi.vendido .preco{text-decoration:line-through;opacity:.55}.semi.vendido .gar{opacity:.5}
+.semi .selo-v{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%) rotate(-10deg);background:var(--laranja);color:#16181B;font-weight:900;font-size:32px;letter-spacing:.14em;padding:10px 28px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.45)}
 .semi .gar{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--laranja)}
 
 /* Como funciona */
@@ -338,9 +340,11 @@ footer b{color:var(--texto)}
   document.getElementById('g-fechar').onclick=function(){gal.close()};gal.addEventListener('close',function(){tr.innerHTML=''});
   lista.addEventListener('click',function(e){var b=e.target.closest('[data-n]');if(b)abrir(+b.dataset.n)});
   fetch('seminovos.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){
-    dados=(d.seminovos||[]).filter(function(s){return s.disponivel!==false});
+    // Disponíveis primeiro; depois os vendidos mais recentes, com carimbo (prova de que vende)
+    var todos=d.seminovos||[];dados=todos.filter(function(s){return s.disponivel!==false}).concat(todos.filter(function(s){return s.disponivel===false}).reverse().slice(0,6));
     lista.innerHTML=dados.map(function(s,n){var q=fotosDe(s).length,msg=encodeURIComponent('Olá! Vim pelo site e tenho interesse no seminovo '+s.modelo+'.');
-      return'<article class="semi aparece"><button class="capa" data-n="'+n+'" aria-label="Ver fotos do '+esc(s.modelo)+'"><img src="'+esc(s.foto)+'" alt="'+esc(s.modelo)+'" loading="lazy"><span class="qtd">📷 '+q+' fotos</span></button><div class="corpo"><span class="gar">Garantia de '+esc(s.garantia)+'</span><h3>'+esc(s.modelo)+'</h3><p class="cfg">'+esc(s.configuracao)+'</p><p class="preco">'+esc(brl(s.preco))+'<small>'+esc(s.condicao||'')+'</small></p><a class="btn btn-wa" href="https://wa.me/5562992085702?text='+msg+'" target="_blank" rel="noopener">Tenho interesse</a></div></article>'}).join('');
+      var v=s.disponivel===false;if(v)msg=encodeURIComponent('Olá! Vi no site que o '+s.modelo+' já foi vendido. Vocês têm algum parecido?');
+      return'<article class="semi aparece'+(v?' vendido':'')+'"><button class="capa" data-n="'+n+'" aria-label="Ver fotos do '+esc(s.modelo)+'"><img src="'+esc(s.foto)+'" alt="'+esc(s.modelo)+'" loading="lazy">'+(v?'<span class="selo-v">VENDIDO</span>':'')+'<span class="qtd">📷 '+q+' fotos</span></button><div class="corpo"><span class="gar">Garantia de '+esc(s.garantia)+'</span><h3>'+esc(s.modelo)+'</h3><p class="cfg">'+esc(s.configuracao)+'</p><p class="preco">'+esc(brl(s.preco))+'<small>'+esc(s.condicao||'')+'</small></p><a class="btn '+(v?'btn-ghost':'btn-wa')+'" href="https://wa.me/5562992085702?text='+msg+'" target="_blank" rel="noopener">'+(v?'Quero um parecido':'Tenho interesse')+'</a></div></article>'}).join('');
     lista.querySelectorAll('.aparece').forEach(function(el){io.observe(el)});
   });
 })();
