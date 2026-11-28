@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>InfoZenha | Assistência técnica de notebooks em Goiânia</title>
-<meta name="description" content="Assistência técnica de notebooks em Goiânia desde 2001. Upgrade de SSD e memória, reparo de carcaça e limpeza completa, com garantia e busca e entrega. Seminovos revisados.">
+<meta name="description" content="Assistência técnica de notebooks em Goiânia desde 2001. Upgrade de SSD e memória, reparo de carcaça, limpeza completa e notebook molhado (desoxidação), com garantia e busca e entrega. Seminovos revisados.">
 <link rel="canonical" href="https://infozenhanotebooks.com.br/">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <!-- Compartilhamento (WhatsApp, Instagram, Facebook) -->
@@ -42,7 +42,8 @@
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Upgrade de SSD" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Upgrade de memória" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparo de carcaça de notebook" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpeza completa de notebook" } }
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpeza completa de notebook" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Notebook molhado: desoxidação da placa", "description": "Notebook que caiu água, café ou outro líquido: desmontagem, desoxidação com banho químico na placa, limpeza e teste." } }
   ]
 }
 </script>
@@ -99,7 +100,7 @@ section{position:relative}
 .aparece.visivel{opacity:1;transform:none}
 
 /* Anatomia: notebook que se desmonta com a rolagem */
-.anatomia{height:320vh}
+.anatomia{height:370vh}
 .anatomia .fixo{position:sticky;top:0;height:100svh;display:grid;grid-template-columns:1fr;align-content:center;gap:10px;overflow:hidden}
 .anatomia .cab{padding-top:70px}
 .palco{height:min(46vh,440px);display:grid;place-items:center}
@@ -140,6 +141,35 @@ section{position:relative}
 .dupla{display:grid;gap:40px;align-items:center}
 .selos{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
 .selos span{border:1px solid var(--linha);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--suave)}
+
+/* Casos da bancada */
+.casos{display:grid;gap:22px;margin-top:44px}
+.caso{display:grid;gap:0;border-radius:24px;overflow:hidden;background:var(--fundo-2);border:1px solid var(--linha)}
+.caso video{width:100%;aspect-ratio:9/16;max-height:640px;object-fit:cover;background:#0E0F11;display:block}
+.caso .info{padding:24px 22px 26px;display:flex;flex-direction:column;gap:14px}
+.caso h3{margin:0;font-size:clamp(24px,3vw,32px);line-height:1.1;letter-spacing:-.02em}
+.caso .ad{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.caso .ad figure{margin:0;position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1}
+.caso .ad img{width:100%;height:100%;object-fit:cover}
+.caso .ad figcaption{position:absolute;left:8px;top:8px;font-size:11px;font-weight:900;letter-spacing:.14em;padding:4px 10px;border-radius:999px;background:#EF4444;color:#fff}
+.caso .ad figure+figure figcaption{background:#22C55E;color:#0B1F12}
+.caso dl{margin:0;display:grid;gap:10px}
+.caso dt{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--laranja)}
+.caso dd{margin:2px 0 0;color:var(--suave)}
+.caso dd b{color:var(--texto)}
+@media (min-width:760px){.caso{grid-template-columns:minmax(260px,360px) 1fr}.caso video{height:100%;max-height:none}.caso .info{padding:34px}}
+
+/* Urgência: derramou líquido */
+.urgencia{border-radius:28px;padding:clamp(26px,5vw,56px);background:linear-gradient(150deg,rgba(242,92,31,.16),rgba(255,255,255,.02) 60%);border:1px solid rgba(242,92,31,.35)}
+.colunas{display:grid;gap:16px;margin-top:30px}
+.coluna{border-radius:20px;padding:22px 22px 10px;background:rgba(18,19,22,.6);border:1px solid var(--linha)}
+.coluna h3{margin:0 0 8px;font-size:15px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.coluna.sim h3{color:#22C55E}.coluna.nao h3{color:#EF4444}
+.coluna ol{margin:0;padding:0;list-style:none}
+.coluna li{padding:12px 0;border-top:1px solid var(--linha)}
+.coluna li b{display:block;font-size:17px}.coluna li small{color:var(--suave);font-size:14px}
+.urgencia .acoes{margin-top:28px}
+@media (min-width:760px){.colunas{grid-template-columns:1fr 1fr}}
 
 /* Seminovos */
 .grade{display:grid;gap:18px;margin-top:44px}
@@ -210,7 +240,7 @@ footer b{color:var(--texto)}
   <div class="wrap">
     <span class="eyebrow">Goiânia · desde 2001</span>
     <h1>Seu notebook <b>de volta</b>, <em>como novo.</em></h1>
-    <p class="sub">Assistência técnica de notebooks com quem faz isso há mais de 20 anos. SSD, memória, carcaça e limpeza completa, com busca e entrega e garantia de 90 dias.</p>
+    <p class="sub">Assistência técnica de notebooks com quem faz isso há mais de 20 anos. SSD, memória, carcaça, limpeza completa e notebook molhado, com busca e entrega e garantia de 90 dias.</p>
     <div class="acoes">
       <a class="btn btn-wa" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento <span class="seta">↗</span></a>
       <a class="btn btn-ghost" href="#seminovos">Ver seminovos</a>
@@ -234,6 +264,7 @@ footer b{color:var(--texto)}
       <img src="assets/img/novo/anat-3.webp" alt="SSD e memória instalados" loading="lazy">
       <img src="assets/img/novo/anat-4.webp" alt="Poeira sendo retirada do cooler com pinça" loading="lazy">
       <img src="assets/img/novo/anat-5.webp" alt="Câmera térmica medindo a temperatura da placa" loading="lazy">
+      <img src="assets/img/novo/anat-6.webp" alt="Carcaça de notebook molhado sendo limpa na bancada" loading="lazy">
       <span class="etiqueta-real">Foto real da bancada</span>
     </div></div>
     <div class="wrap" style="width:auto;margin:0;padding:0 20px">
@@ -244,6 +275,7 @@ footer b{color:var(--texto)}
         <li data-c="c-ssd,c-memoria"><span class="n">03</span><div><b>SSD e memória</b><small>O upgrade que faz um notebook de 5 anos ligar em segundos. Sem trocar de aparelho.</small></div></li>
         <li data-c="c-cooler"><span class="n">04</span><div><b>Cooler e pasta térmica</b><small>Limpeza completa e pasta nova: menos calor, menos barulho, mais desempenho.</small></div></li>
         <li data-c="c-placa"><span class="n">05</span><div><b>Placa e diagnóstico</b><small>Diagnóstico honesto antes de qualquer serviço. Você aprova o orçamento primeiro.</small></div></li>
+        <li data-c="c-placa,c-base"><span class="n">06</span><div><b>Notebook molhado</b><small>Caiu água, café ou refrigerante? Desoxidação com banho químico na placa, limpeza completa e teste.</small></div></li>
       </ol>
     </div>
   </div></div>
@@ -261,6 +293,52 @@ footer b{color:var(--texto)}
     <img class="depois" src="assets/img/novo/depois.webp" alt="Cooler limpo depois da limpeza">
     <div class="linha"></div><div class="puxador" aria-hidden="true">⇆</div>
     <span class="rot a">ANTES</span><span class="rot d">DEPOIS</span>
+  </div>
+</div></section>
+
+<section class="secao" id="casos" style="padding-top:0"><div class="wrap">
+  <div class="aparece"><span class="eyebrow">Casos da bancada</span><h2 class="titulo">Chegou assim. <span class="fino">Voltou assim.</span></h2>
+  <p class="lead">Serviços reais, com fotos e vídeo da nossa bancada.</p></div>
+  <div class="casos">
+    <article class="caso aparece">
+      <video src="assets/video/nitro5-agua.mp4" poster="assets/img/casos/nitro5-poster.webp" muted loop playsinline autoplay preload="metadata" aria-label="Vídeo do reparo do Acer Nitro 5 molhado"></video>
+      <div class="info">
+        <span class="eyebrow">Notebook molhado</span>
+        <h3>Acer Nitro 5: derramou água e parou de ligar</h3>
+        <div class="ad">
+          <figure><img src="assets/img/casos/nitro5-antes.webp" alt="Interior do Nitro 5 sujo, antes do serviço" loading="lazy"><figcaption>ANTES</figcaption></figure>
+          <figure><img src="assets/img/casos/nitro5-depois.webp" alt="Interior do Nitro 5 limpo, depois do serviço" loading="lazy"><figcaption>DEPOIS</figcaption></figure>
+        </div>
+        <dl>
+          <div><dt>O problema</dt><dd>Chegou <b>sem ligar</b> depois de cair água, e muito sujo por dentro.</dd></div>
+          <div><dt>O que fizemos</dt><dd><b>Desoxidação com banho químico na placa</b>, limpeza completa da carcaça, pasta térmica nova e coolers lubrificados.</dd></div>
+          <div><dt>Resultado</dt><dd>Voltou <b>funcionando 100%</b>, com garantia de 90 dias.</dd></div>
+        </dl>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<section class="secao" id="derramou" style="padding-top:0"><div class="wrap">
+  <div class="urgencia aparece">
+    <span class="eyebrow">Urgente</span>
+    <h2 class="titulo">Derramou líquido <span class="fino">no notebook?</span></h2>
+    <p class="lead">O que você faz nos primeiros minutos decide se o conserto vai ser simples ou caro.</p>
+    <div class="colunas">
+      <div class="coluna sim"><h3>✓ Faça agora</h3><ol>
+        <li><b>Desligue na hora</b><small>Segure o botão de ligar até apagar.</small></li>
+        <li><b>Tire da tomada</b><small>E a bateria, se ela for removível.</small></li>
+        <li><b>Vire de cabeça para baixo</b><small>Aberto em "V", para o líquido escorrer.</small></li>
+        <li><b>Chame a assistência no mesmo dia</b><small>Quanto antes, menor o estrago.</small></li>
+      </ol></div>
+      <div class="coluna nao"><h3>✕ Não faça</h3><ol>
+        <li><b>Ligar "para ver se funciona"</b><small>Com a placa molhada, pode queimar de vez.</small></li>
+        <li><b>Usar secador de cabelo</b><small>O calor espalha o líquido e danifica peças.</small></li>
+        <li><b>Colocar no arroz</b><small>Não seca por dentro e ainda solta pó.</small></li>
+        <li><b>Esperar dias para levar</b><small>A oxidação continua corroendo a placa.</small></li>
+      </ol></div>
+    </div>
+    <div class="acoes"><a class="btn btn-wa" data-wa href="https://wa.me/5562992085702?text=Ol%C3%A1!%20Derramei%20l%C3%ADquido%20no%20meu%20notebook.%20Podem%20me%20ajudar%3F" target="_blank" rel="noopener">Derramei líquido: chamar agora <span class="seta">↗</span></a></div>
   </div>
 </div></section>
 
