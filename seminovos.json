@@ -1,6 +1,56 @@
 {
-  "atualizado_em": "2026-11-24",
+  "atualizado_em": "2026-11-27",
   "seminovos": [
+    {
+      "modelo": "Dell Inspiron 15 3501",
+      "configuracao": "Intel Pentium Gold 7505 · 8 GB de memória DDR4 · SSD NVMe 128 GB · tela de 15,6\" · muito novo, quase sem uso",
+      "preco": 2399,
+      "condicao": "À vista no Pix · consulte condições de parcelamento",
+      "garantia": "90 dias",
+      "foto": "assets/img/seminovos/dell-inspiron-15-3501/01.webp",
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3501/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3501/02.webp",
+          "legenda": "Lateral"
+        },
+        {
+          "src": "assets/img/seminovos/dell-inspiron-15-3501/03.webp",
+          "legenda": "Tampa e carregador original"
+        }
+      ]
+    },
+    {
+      "modelo": "Samsung Book E20",
+      "configuracao": "Intel Celeron 5205U · 8 GB de memória DDR4 (com upgrade) · SSD NVMe 128 GB · vídeo Intel UHD Graphics · tela de 15,6\"",
+      "preco": 1499,
+      "condicao": "À vista no Pix · consulte condições de parcelamento",
+      "garantia": "90 dias",
+      "foto": "assets/img/seminovos/samsung-book-e20/01.webp",
+      "disponivel": true,
+      "fotos": [
+        {
+          "src": "assets/img/seminovos/samsung-book-e20/01.webp",
+          "legenda": "Aberto, de frente"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-book-e20/02.webp",
+          "legenda": "Teclado"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-book-e20/03.webp",
+          "legenda": "Visão geral"
+        },
+        {
+          "src": "assets/img/seminovos/samsung-book-e20/04.webp",
+          "legenda": "Parte de baixo"
+        }
+      ]
+    },
     {
       "modelo": "Dell Core i5 10ª geração 14\"",
       "configuracao": "Intel Core i5 10ª geração · 8 GB de memória DDR4 · SSD NVMe 240 GB · tela de 14\" · bateria e carcaça em excelente estado",
